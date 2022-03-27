@@ -1,0 +1,35 @@
+{
+	"FileVersion" : 3,
+	"Version" : 1,
+	"VersionName" : "1.0",
+	"FriendlyName" : "DcPlugin",
+	"Description" : "Example of a plugin with headless program target",
+	"Category" : "Examples",
+	"CreatedBy" : "slowburn.dev",
+	"CreatedByURL" : "http://slowburn.dev",
+	"DocsURL" : "",
+	"MarketplaceURL" : "",
+	"SupportURL" : "",
+	"EnabledByDefault" : true,
+	"CanContainContent" : false,
+	"IsBetaVersion" : false,
+	"Installed" : false,
+	"Modules" :
+	[
+		{
+			"Name": "DcPluginCore",
+			"Type": "Editor",
+			"LoadingPhase": "None"
+		},
+		{
+			"Name": "DcPluginRuntime",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "DcPluginEditor",
+			"Type": "Editor",
+			"LoadingPhase": "Default"
+		}
+	]
+}
