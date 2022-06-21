@@ -1,0 +1,107 @@
+// /ShooterCore/Game/TagRelationships_ShooterHero
+{
+    "$type" : "LyraAbilityTagRelationshipMapping",
+    "AbilityTagRelationships" : [
+        {
+            "AbilityTag" : "Ability.Type.Action",
+            "AbilityTagsToBlock" : [],
+            "AbilityTagsToCancel" : [],
+            "ActivationRequiredTags" : [],
+            "ActivationBlockedTags" : [
+                "Status.Death.Dead",
+                "Status.Death.Dying"
+            ]
+        },
+        {
+            "AbilityTag" : "Ability.Type.Action.WeaponFire",
+            "AbilityTagsToBlock" : [
+                "Ability.Type.Action.Emote",
+                "Ability.Type.Action.Reload"
+            ],
+            "AbilityTagsToCancel" : [
+                "Ability.Type.Action.Emote",
+                "Ability.Type.Action.Reload"
+            ],
+            "ActivationRequiredTags" : [],
+            "ActivationBlockedTags" : []
+        },
+        {
+            "AbilityTag" : "Ability.Type.Action.ADS",
+            "AbilityTagsToBlock" : [],
+            "AbilityTagsToCancel" : [],
+            "ActivationRequiredTags" : [],
+            "ActivationBlockedTags" : []
+        },
+        {
+            "AbilityTag" : "Ability.Type.Action.Melee",
+            "AbilityTagsToBlock" : [
+                "Ability.Type.Action.WeaponFire",
+                "Ability.Type.Action.Emote",
+                "Ability.Type.Action.Reload"
+            ],
+            "AbilityTagsToCancel" : [
+                "Ability.Type.Action.Emote",
+                "Ability.Type.Action.Reload"
+            ],
+            "ActivationRequiredTags" : [],
+            "ActivationBlockedTags" : []
+        },
+        {
+            "AbilityTag" : "Ability.Type.Action.Dash",
+            "AbilityTagsToBlock" : [
+                "Ability.Type.Action"
+            ],
+            "AbilityTagsToCancel" : [
+                "Ability.Type.Action"
+            ],
+            "ActivationRequiredTags" : [],
+            "ActivationBlockedTags" : []
+        },
+        {
+            "AbilityTag" : "Ability.Type.Action.Drop",
+            "AbilityTagsToBlock" : [
+                "Ability.Type.Action.WeaponFire",
+                "Ability.Type.Action.Emote",
+                "Ability.Type.Action.Reload"
+            ],
+            "AbilityTagsToCancel" : [
+                "Ability.Type.Action.Emote",
+                "Ability.Type.Action.Reload"
+            ],
+            "ActivationRequiredTags" : [],
+            "ActivationBlockedTags" : []
+        },
+        {
+            "AbilityTag" : "Ability.Type.Action.Grenade",
+            "AbilityTagsToBlock" : [
+                "Ability.Type.Action.WeaponFire",
+                "Ability.Type.Action.Emote",
+                "Ability.Type.Action.Reload"
+            ],
+            "AbilityTagsToCancel" : [
+                "Ability.Type.Action.Emote",
+                "Ability.Type.Action.Reload"
+            ],
+            "ActivationRequiredTags" : [],
+            "ActivationBlockedTags" : []
+        },
+        {
+            "AbilityTag" : "Ability.Type.Action.Reload",
+            "AbilityTagsToBlock" : [
+                "Ability.Type.Action.Emote"
+            ],
+            "AbilityTagsToCancel" : [],
+            "ActivationRequiredTags" : [],
+            "ActivationBlockedTags" : []
+        },
+        {
+            "AbilityTag" : "Ability.Type.Action.Emote",
+            "AbilityTagsToBlock" : [],
+            "AbilityTagsToCancel" : [],
+            "ActivationRequiredTags" : [],
+            "ActivationBlockedTags" : [
+                "Movement.Mode.Falling"
+            ]
+        }
+    ]
+}

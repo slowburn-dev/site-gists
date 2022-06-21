@@ -1,0 +1,23 @@
+// /ShooterCore/Weapons/Rifle/AbilitySet_ShooterRifle
+{
+    "$type" : "LyraAbilitySet",
+    "GrantedGameplayAbilities" : [
+        {
+            "Ability" : "/ShooterCore/Weapons/Rifle/GA_Weapon_Fire_Rifle_Auto",
+            "AbilityLevel" : 1,
+            "InputTag" : "InputTag.Weapon.FireAuto"
+        },
+        {
+            "Ability" : "/ShooterCore/Weapons/Rifle/GA_Weapon_Reload_Rifle",
+            "AbilityLevel" : 1,
+            "InputTag" : "InputTag.Weapon.Reload"
+        },
+        {
+            "Ability" : "/Game/Weapons/GA_Weapon_AutoReload",
+            "AbilityLevel" : 1,
+            "InputTag" : null
+        }
+    ],
+    "GrantedGameplayEffects" : [],
+    "GrantedAttributes" : []
+}

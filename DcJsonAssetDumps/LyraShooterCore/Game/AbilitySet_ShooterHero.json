@@ -1,0 +1,68 @@
+// /ShooterCore/Game/AbilitySet_ShooterHero
+{
+    "$type" : "LyraAbilitySet",
+    "GrantedGameplayAbilities" : [
+        {
+            "Ability" : "/Game/Characters/Heroes/Abilities/GA_Hero_Jump",
+            "AbilityLevel" : 1,
+            "InputTag" : "InputTag.Jump"
+        },
+        {
+            "Ability" : "/Game/Characters/Heroes/Abilities/GA_Hero_Death",
+            "AbilityLevel" : 1,
+            "InputTag" : null
+        },
+        {
+            "Ability" : "/ShooterCore/Game/Dash/GA_Hero_Dash",
+            "AbilityLevel" : 1,
+            "InputTag" : "InputTag.Ability.Dash"
+        },
+        {
+            "Ability" : "/ShooterCore/Game/Emote/GA_Emote",
+            "AbilityLevel" : 1,
+            "InputTag" : "InputTag.Ability.Emote"
+        },
+        {
+            "Ability" : "/ShooterCore/Game/GA_QuickbarSlots",
+            "AbilityLevel" : 1,
+            "InputTag" : "InputTag.Ability.Quickslot"
+        },
+        {
+            "Ability" : "/ShooterCore/Input/Abilities/GA_ADS",
+            "AbilityLevel" : 1,
+            "InputTag" : "InputTag.Weapon.ADS"
+        },
+        {
+            "Ability" : "/ShooterCore/Input/Abilities/GA_Grenade",
+            "AbilityLevel" : 1,
+            "InputTag" : "InputTag.Weapon.Grenade"
+        },
+        {
+            "Ability" : "/ShooterCore/Input/Abilities/GA_DropWeapon",
+            "AbilityLevel" : 1,
+            "InputTag" : "InputTag.Ability.Quickslot.Drop"
+        },
+        {
+            "Ability" : "/ShooterCore/Game/Melee/GA_Melee",
+            "AbilityLevel" : 1,
+            "InputTag" : "InputTag.Ability.Melee"
+        },
+        {
+            "Ability" : "/ShooterCore/Game/Respawn/GA_SpawnEffect",
+            "AbilityLevel" : 1,
+            "InputTag" : null
+        },
+        {
+            "Ability" : "LyraGameplayAbility_Reset",
+            "AbilityLevel" : 1,
+            "InputTag" : null
+        }
+    ],
+    "GrantedGameplayEffects" : [
+        {
+            "GameplayEffect" : "/Game/GameplayEffects/GE_IsPlayer",
+            "EffectLevel" : 1
+        }
+    ],
+    "GrantedAttributes" : []
+}

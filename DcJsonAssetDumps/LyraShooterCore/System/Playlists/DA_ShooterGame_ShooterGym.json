@@ -1,0 +1,16 @@
+// /ShooterCore/System/Playlists/DA_ShooterGame_ShooterGym
+{
+    "$type" : "LyraUserFacingExperienceDefinition",
+    "MapID" : "Map:/ShooterCore/Maps/L_ShooterGym",
+    "ExperienceID" : "LyraExperienceDefinition:B_LyraShooterGame_ControlPoints",
+    "ExtraArgs" : {},
+    "TileTitle" : "Control",
+    "TileSubTitle" : "Shooter Gym",
+    "TileDescription" : "Small test level for ShooterCore",
+    "TileIcon" : "/Game/UI/Menu/Art/T_UI_MapTile_NoIcon",
+    "LoadingScreenWidget" : "/Game/UI/Foundation/LoadingScreen/W_LoadingScreen_DefaultContent",
+    "bIsDefaultExperience" : false,
+    "bShowInFrontEnd" : false,
+    "bRecordReplay" : false,
+    "MaxPlayerCount" : 8
+}

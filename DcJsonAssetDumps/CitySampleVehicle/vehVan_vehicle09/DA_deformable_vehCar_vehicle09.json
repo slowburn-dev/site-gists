@@ -1,0 +1,116 @@
+// /Game/Vehicle/vehVan_vehicle09/DA_deformable_vehCar_vehicle09
+{
+    "$type" : "/Game/Vehicle/Blueprint/Deformable/DeformableVehicleDataAsset",
+    "On Physics Body Hit" : {},
+    "Peripheral Physics Bodies" : [],
+    "Control Rig Element Mapping" : {
+        "bumper_front_02_r" : {
+            "Element Type" : "Bone",
+            "Control Rig Element" : "bumper_front_02_r"
+        },
+        "bumper_front_01_r" : {
+            "Element Type" : "Bone",
+            "Control Rig Element" : "bumper_front_01_r"
+        },
+        "bumper_front" : {
+            "Element Type" : "Bone",
+            "Control Rig Element" : "bumper_front"
+        },
+        "bumper_front_01_l" : {
+            "Element Type" : "Bone",
+            "Control Rig Element" : "bumper_front_01_l"
+        },
+        "bumper_front_02_l" : {
+            "Element Type" : "Bone",
+            "Control Rig Element" : "bumper_front_02_l"
+        },
+        "bumper_rear_02_r" : {
+            "Element Type" : "Bone",
+            "Control Rig Element" : "bumper_rear_02_r"
+        },
+        "bumper_rear_01_r" : {
+            "Element Type" : "Bone",
+            "Control Rig Element" : "bumper_rear_01_r"
+        },
+        "bumper_rear" : {
+            "Element Type" : "Bone",
+            "Control Rig Element" : "bumper_rear"
+        },
+        "bumper_rear_01_l" : {
+            "Element Type" : "Bone",
+            "Control Rig Element" : "bumper_rear_01_l"
+        },
+        "bumper_rear_02_l" : {
+            "Element Type" : "Bone",
+            "Control Rig Element" : "bumper_rear_02_l"
+        }
+    },
+    "On Constraint Broken" : {
+        "bumper_front_02_r" : {
+            "Break Glass Bone Names" : [],
+            "Parent Key" : "bumper_front",
+            "Spawn Geometry Collection Actor" : {}
+        },
+        "bumper_front_01_r" : {
+            "Break Glass Bone Names" : [],
+            "Parent Key" : "bumper_front",
+            "Spawn Geometry Collection Actor" : {}
+        },
+        "bumper_front" : {
+            "Break Glass Bone Names" : [],
+            "Parent Key" : "bumper_front",
+            "Spawn Geometry Collection Actor" : {}
+        },
+        "bumper_front_01_l" : {
+            "Break Glass Bone Names" : [],
+            "Parent Key" : "bumper_front",
+            "Spawn Geometry Collection Actor" : {}
+        },
+        "bumper_front_02_l" : {
+            "Break Glass Bone Names" : [],
+            "Parent Key" : "bumper_front",
+            "Spawn Geometry Collection Actor" : {}
+        },
+        "bumper_rear_02_r" : {
+            "Break Glass Bone Names" : [],
+            "Parent Key" : "bumper_rear",
+            "Spawn Geometry Collection Actor" : {}
+        },
+        "bumper_rear_01_r" : {
+            "Break Glass Bone Names" : [],
+            "Parent Key" : "bumper_rear",
+            "Spawn Geometry Collection Actor" : {}
+        },
+        "bumper_rear" : {
+            "Break Glass Bone Names" : [],
+            "Parent Key" : "bumper_rear",
+            "Spawn Geometry Collection Actor" : {}
+        },
+        "bumper_rear_01_l" : {
+            "Break Glass Bone Names" : [],
+            "Parent Key" : "bumper_rear",
+            "Spawn Geometry Collection Actor" : {}
+        },
+        "bumper_rear_02_l" : {
+            "Break Glass Bone Names" : [],
+            "Parent Key" : "bumper_rear",
+            "Spawn Geometry Collection Actor" : {}
+        }
+    },
+    "On Constraint Broken Spawn" : {
+        "bumper_rear" : {
+            "Spawn Skeletal Mesh" : null,
+            "Number Of Constraints" : 5
+        }
+    },
+    "On Plastic Deformation" : {},
+    "Control Rig Options" : {
+        "Body Style" : "Sedan",
+        "Front Panel Rotation Offset" : 20,
+        "Front Panel Rotation Random Offset" : {
+            "X" : 30,
+            "Y" : -35,
+            "Z" : 5
+        }
+    }
+}

@@ -1,0 +1,31 @@
+// /ShooterCore/Input/Actions/InputData_ShooterGame_AddOns
+{
+    "$type" : "LyraInputConfig",
+    "NativeInputActions" : [],
+    "AbilityInputActions" : [
+        {
+            "InputAction" : "/ShooterCore/Input/Actions/IA_ShowScoreboard",
+            "InputTag" : "InputTag.Ability.ShowLeaderboard"
+        },
+        {
+            "InputAction" : "/ShooterCore/Input/Actions/IA_ADS",
+            "InputTag" : "InputTag.Weapon.ADS"
+        },
+        {
+            "InputAction" : "/ShooterCore/Input/Actions/IA_Grenade",
+            "InputTag" : "InputTag.Weapon.Grenade"
+        },
+        {
+            "InputAction" : "/ShooterCore/Input/Actions/IA_Emote",
+            "InputTag" : "InputTag.Ability.Emote"
+        },
+        {
+            "InputAction" : "/ShooterCore/Input/Actions/IA_DropWeapon",
+            "InputTag" : "InputTag.Ability.Quickslot.Drop"
+        },
+        {
+            "InputAction" : "/ShooterCore/Input/Actions/IA_Melee",
+            "InputTag" : "InputTag.Ability.Melee"
+        }
+    ]
+}

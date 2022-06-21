@@ -1,0 +1,550 @@
+// /ShooterCore/Input/Mappings/IMC_ShooterGame_Gamepad
+{
+    "$type" : "InputMappingContext",
+    "ContextDescription" : "Shooter Game IMC for gamepad",
+    "Mappings" : [
+        {
+            "Action" : "/ShooterCore/Input/Actions/IA_ShowScoreboard",
+            "Key" : {
+                "KeyName" : "Gamepad_Special_Left"
+            },
+            "bIsPlayerMappable" : true,
+            "PlayerMappableOptions" : {
+                "Name" : "ShowScoreboard_Gamepad",
+                "DisplayName" : "Show Scoreboard (Gamepad)",
+                "DisplayCategory" : "Gamepad"
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [],
+            "Modifiers" : []
+        },
+        {
+            "Action" : "/ShooterCore/Input/Actions/IA_ADS",
+            "Key" : {
+                "KeyName" : "Gamepad_LeftTrigger"
+            },
+            "bIsPlayerMappable" : true,
+            "PlayerMappableOptions" : {
+                "Name" : "ADS_Gamepad",
+                "DisplayName" : "Aim Down Sight (Gamepad)",
+                "DisplayCategory" : "Gamepad"
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [],
+            "Modifiers" : []
+        },
+        {
+            "Action" : "/ShooterCore/Input/Actions/IA_Grenade",
+            "Key" : {
+                "KeyName" : "Gamepad_LeftShoulder"
+            },
+            "bIsPlayerMappable" : true,
+            "PlayerMappableOptions" : {
+                "Name" : "Grenade_Gamepad",
+                "DisplayName" : "Throw Grenade (Gamepad)",
+                "DisplayCategory" : "Gamepad"
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [
+                {
+                    "$type" : "InputTriggerPressed",
+                    "ActuationThreshold" : 0.5,
+                    "LastValue" : {}
+                }
+            ],
+            "Modifiers" : []
+        },
+        {
+            "Action" : "/ShooterCore/Input/Actions/IA_Emote",
+            "Key" : {
+                "KeyName" : "Gamepad_DPad_Down"
+            },
+            "bIsPlayerMappable" : true,
+            "PlayerMappableOptions" : {
+                "Name" : "Emote_Gamepad",
+                "DisplayName" : "Emote (Gamepad)",
+                "DisplayCategory" : "Gamepad"
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [
+                {
+                    "$type" : "InputTriggerTap",
+                    "TapReleaseTimeThreshold" : 0.2,
+                    "HeldDuration" : 0,
+                    "bAffectedByTimeDilation" : false,
+                    "ActuationThreshold" : 0.5,
+                    "LastValue" : {}
+                }
+            ],
+            "Modifiers" : []
+        },
+        {
+            "Action" : "/ShooterCore/Input/Actions/IA_QuickSlot_CycleBackward",
+            "Key" : {
+                "KeyName" : "Gamepad_DPad_Left"
+            },
+            "bIsPlayerMappable" : true,
+            "PlayerMappableOptions" : {
+                "Name" : "QuickslotCycleBackward_Gamepad",
+                "DisplayName" : "Quickslot Cycle Backward (Gamepad)",
+                "DisplayCategory" : "Gamepad"
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [
+                {
+                    "$type" : "InputTriggerPressed",
+                    "ActuationThreshold" : 0.5,
+                    "LastValue" : {}
+                }
+            ],
+            "Modifiers" : []
+        },
+        {
+            "Action" : "/ShooterCore/Input/Actions/IA_QuickSlot_CycleForward",
+            "Key" : {
+                "KeyName" : "Gamepad_DPad_Right"
+            },
+            "bIsPlayerMappable" : true,
+            "PlayerMappableOptions" : {
+                "Name" : "IA_QuickSlot_CycleForward_Gamepad",
+                "DisplayName" : "Quickslot Cycle Forward (Gamepad)",
+                "DisplayCategory" : "Gamepad"
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [
+                {
+                    "$type" : "InputTriggerPressed",
+                    "ActuationThreshold" : 0.5,
+                    "LastValue" : {}
+                }
+            ],
+            "Modifiers" : []
+        },
+        {
+            "Action" : "/ShooterCore/Input/Actions/IA_Melee",
+            "Key" : {
+                "KeyName" : "Gamepad_RightShoulder"
+            },
+            "bIsPlayerMappable" : true,
+            "PlayerMappableOptions" : {
+                "Name" : "Melee_Gamepad",
+                "DisplayName" : "Melee (Gamepad)",
+                "DisplayCategory" : "Gamepad"
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [
+                {
+                    "$type" : "InputTriggerPressed",
+                    "ActuationThreshold" : 0.5,
+                    "LastValue" : {}
+                }
+            ],
+            "Modifiers" : []
+        },
+        {
+            "Action" : "/ShooterCore/Input/Actions/IA_ShowScoreboard",
+            "Key" : {
+                "KeyName" : "None"
+            },
+            "bIsPlayerMappable" : true,
+            "PlayerMappableOptions" : {
+                "Name" : "ShowScoreboard_Gamepad_Secondary",
+                "DisplayName" : "Show Scoreboard (Gamepad)",
+                "DisplayCategory" : "Gamepad"
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [],
+            "Modifiers" : []
+        },
+        {
+            "Action" : "/ShooterCore/Input/Actions/IA_Melee",
+            "Key" : {
+                "KeyName" : "None"
+            },
+            "bIsPlayerMappable" : true,
+            "PlayerMappableOptions" : {
+                "Name" : "Melee_Gamepad_Secondary",
+                "DisplayName" : "Melee (Gamepad)",
+                "DisplayCategory" : "Gamepad"
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [
+                {
+                    "$type" : "InputTriggerPressed",
+                    "ActuationThreshold" : 0.5,
+                    "LastValue" : {}
+                }
+            ],
+            "Modifiers" : []
+        },
+        {
+            "Action" : "/ShooterCore/Input/Actions/IA_ADS",
+            "Key" : {
+                "KeyName" : "None"
+            },
+            "bIsPlayerMappable" : true,
+            "PlayerMappableOptions" : {
+                "Name" : "ADS_Gamepad_Secondary",
+                "DisplayName" : "Aim Down Sight (Gamepad)",
+                "DisplayCategory" : "Gamepad"
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [],
+            "Modifiers" : []
+        },
+        {
+            "Action" : "/ShooterCore/Input/Actions/IA_Grenade",
+            "Key" : {
+                "KeyName" : "None"
+            },
+            "bIsPlayerMappable" : true,
+            "PlayerMappableOptions" : {
+                "Name" : "Grenade_Gamepad_Secondary",
+                "DisplayName" : "Throw Grenade (Gamepad)",
+                "DisplayCategory" : "Gamepad"
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [
+                {
+                    "$type" : "InputTriggerPressed",
+                    "ActuationThreshold" : 0.5,
+                    "LastValue" : {}
+                }
+            ],
+            "Modifiers" : []
+        },
+        {
+            "Action" : "/ShooterCore/Input/Actions/IA_Emote",
+            "Key" : {
+                "KeyName" : "None"
+            },
+            "bIsPlayerMappable" : true,
+            "PlayerMappableOptions" : {
+                "Name" : "Emote_Gamepad_Secondary",
+                "DisplayName" : "Emote (Gamepad)",
+                "DisplayCategory" : "Gamepad"
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [],
+            "Modifiers" : []
+        },
+        {
+            "Action" : "/ShooterCore/Input/Actions/IA_QuickSlot_CycleBackward",
+            "Key" : {
+                "KeyName" : "None"
+            },
+            "bIsPlayerMappable" : true,
+            "PlayerMappableOptions" : {
+                "Name" : "QuickslotCycleBackward_Gamepad_Secondary",
+                "DisplayName" : "Quickslot Cycle Backward (Gamepad)",
+                "DisplayCategory" : "Gamepad"
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [
+                {
+                    "$type" : "InputTriggerPressed",
+                    "ActuationThreshold" : 0.5,
+                    "LastValue" : {}
+                }
+            ],
+            "Modifiers" : []
+        },
+        {
+            "Action" : "/ShooterCore/Input/Actions/IA_QuickSlot_CycleForward",
+            "Key" : {
+                "KeyName" : "None"
+            },
+            "bIsPlayerMappable" : true,
+            "PlayerMappableOptions" : {
+                "Name" : "IA_QuickSlot_CycleForward_Gamepad_Secondary",
+                "DisplayName" : "Quickslot Cycle Forward (Gamepad)",
+                "DisplayCategory" : "Gamepad"
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [],
+            "Modifiers" : []
+        },
+        {
+            "Action" : "/Game/Input/Actions/IA_Look_Stick",
+            "Key" : {
+                "KeyName" : "Gamepad_Right2D"
+            },
+            "bIsPlayerMappable" : false,
+            "PlayerMappableOptions" : {
+                "Name" : "None",
+                "DisplayName" : "",
+                "DisplayCategory" : ""
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [],
+            "Modifiers" : [
+                {
+                    "$type" : "InputModifierNegate",
+                    "bX" : false,
+                    "bY" : true,
+                    "bZ" : false
+                },
+                {
+                    "$type" : "LyraInputModifierDeadZone",
+                    "Type" : "Radial",
+                    "UpperThreshold" : 1,
+                    "DeadzoneStick" : "LookStick"
+                },
+                {
+                    "$type" : "LyraInputModifierGamepadSensitivity",
+                    "TargetingType" : "Normal",
+                    "SensitivityLevelTable" : "/Game/Input/Settings/GamepadAimSensitivity_Normal"
+                },
+                {
+                    "$type" : "LyraInputModifierAimInversion"
+                },
+                {
+                    "$type" : "AimAssistInputModifier",
+                    "Settings" : {
+                        "AssistInnerReticleWidth" : {
+                            "Value" : 20,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "AssistInnerReticleHeight" : {
+                            "Value" : 20,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "AssistOuterReticleWidth" : {
+                            "Value" : 80,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "AssistOuterReticleHeight" : {
+                            "Value" : 80,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "TargetingReticleWidth" : {
+                            "Value" : 1200,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "TargetingReticleHeight" : {
+                            "Value" : 675,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "TargetRange" : {
+                            "Value" : 10000,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "TargetWeightCurve" : "/ShooterCore/Input/Mappings/C_AimAssistTargetWeightCurve",
+                        "PullInnerStrengthHip" : {
+                            "Value" : 0.6,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "PullOuterStrengthHip" : {
+                            "Value" : 0.5,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "PullInnerStrengthAds" : {
+                            "Value" : 0.7,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "PullOuterStrengthAds" : {
+                            "Value" : 0.4,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "PullLerpInRate" : {
+                            "Value" : 60,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "PullLerpOutRate" : {
+                            "Value" : 4,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "PullMaxRotationRate" : {
+                            "Value" : 0,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "SlowInnerStrengthHip" : {
+                            "Value" : 0.6,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "SlowOuterStrengthHip" : {
+                            "Value" : 0.5,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "SlowInnerStrengthAds" : {
+                            "Value" : 0.7,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "SlowOuterStrengthAds" : {
+                            "Value" : 0.4,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "SlowLerpInRate" : {
+                            "Value" : 60,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "SlowLerpOutRate" : {
+                            "Value" : 4,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "SlowMinRotationRate" : {
+                            "Value" : 0,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "MaxNumberOfTargets" : 6,
+                        "ReticleDepth" : 10000,
+                        "TargetScore_AssistWeight" : 10,
+                        "TargetScore_ViewDot" : 50,
+                        "TargetScore_ViewDotOffset" : 40,
+                        "TargetScore_ViewDistance" : 0.25,
+                        "StrengthScale" : 1,
+                        "bEnableAsyncVisibilityTrace" : true,
+                        "bRequireInput" : true,
+                        "bApplyPull" : true,
+                        "bApplyStrafePullScale" : true,
+                        "bApplySlowing" : true,
+                        "bUseDynamicSlow" : true,
+                        "bUseRadialLookRates" : true
+                    },
+                    "Filter" : {
+                        "bIncludeSameFriendlyTargets" : false,
+                        "bExcludeInstigator" : true,
+                        "bExcludeAllAttachedToInstigator" : false,
+                        "bExcludeRequester" : true,
+                        "bExcludeAllAttachedToRequester" : false,
+                        "bTraceComplexCollision" : false,
+                        "bExcludeDeadOrDying" : true,
+                        "ExcludedClasses" : [],
+                        "TargetRange" : 10000
+                    },
+                    "MoveInputAction" : "/Game/Input/Actions/IA_Move",
+                    "TargetingType" : "Normal",
+                    "SensitivityLevelTable" : "/Game/Input/Settings/GamepadAimSensitivity_Normal",
+                    "TargetCache0" : [],
+                    "TargetCache1" : []
+                }
+            ]
+        }
+    ]
+}

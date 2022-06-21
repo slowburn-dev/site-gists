@@ -1,0 +1,324 @@
+// /ShooterCore/Input/Mappings/IMC_ADS_Speed
+{
+    "$type" : "InputMappingContext",
+    "ContextDescription" : "Input mapping context that will be applied when the player aims down sights. It makes the aim speed slower for better accuracy. See GA_ADS.",
+    "Mappings" : [
+        {
+            "Action" : "/Game/Input/Actions/IA_Look_Mouse",
+            "Key" : {
+                "KeyName" : "Mouse2D"
+            },
+            "bIsPlayerMappable" : false,
+            "PlayerMappableOptions" : {
+                "Name" : "None",
+                "DisplayName" : "",
+                "DisplayCategory" : ""
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [],
+            "Modifiers" : [
+                {
+                    "$type" : "LyraSettingBasedScalar",
+                    "XAxisScalarSettingName" : "TargetingMultiplier",
+                    "YAxisScalarSettingName" : "TargetingMultiplier",
+                    "ZAxisScalarSettingName" : "TargetingMultiplier",
+                    "MaxValueClamp" : {
+                        "X" : 10,
+                        "Y" : 10,
+                        "Z" : 10
+                    },
+                    "MinValueClamp" : {
+                        "X" : 0,
+                        "Y" : 0,
+                        "Z" : 0
+                    }
+                },
+                {
+                    "$type" : "LyraInputModifierAimInversion"
+                }
+            ]
+        },
+        {
+            "Action" : "/Game/Input/Actions/IA_Look_Stick",
+            "Key" : {
+                "KeyName" : "Gamepad_Right2D"
+            },
+            "bIsPlayerMappable" : false,
+            "PlayerMappableOptions" : {
+                "Name" : "None",
+                "DisplayName" : "",
+                "DisplayCategory" : ""
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [],
+            "Modifiers" : [
+                {
+                    "$type" : "InputModifierNegate",
+                    "bX" : false,
+                    "bY" : true,
+                    "bZ" : false
+                },
+                {
+                    "$type" : "LyraInputModifierDeadZone",
+                    "Type" : "Radial",
+                    "UpperThreshold" : 1,
+                    "DeadzoneStick" : "LookStick"
+                },
+                {
+                    "$type" : "LyraInputModifierGamepadSensitivity",
+                    "TargetingType" : "ADS",
+                    "SensitivityLevelTable" : "/ShooterCore/Input/Settings/GamepadAimSensitivity_Targeting"
+                },
+                {
+                    "$type" : "LyraInputModifierAimInversion"
+                },
+                {
+                    "$type" : "AimAssistInputModifier",
+                    "Settings" : {
+                        "AssistInnerReticleWidth" : {
+                            "Value" : 20,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "AssistInnerReticleHeight" : {
+                            "Value" : 20,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "AssistOuterReticleWidth" : {
+                            "Value" : 80,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "AssistOuterReticleHeight" : {
+                            "Value" : 80,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "TargetingReticleWidth" : {
+                            "Value" : 1200,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "TargetingReticleHeight" : {
+                            "Value" : 675,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "TargetRange" : {
+                            "Value" : 10000,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "TargetWeightCurve" : "/ShooterCore/Input/Mappings/C_AimAssistTargetWeightCurve",
+                        "PullInnerStrengthHip" : {
+                            "Value" : 0.6,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "PullOuterStrengthHip" : {
+                            "Value" : 0.5,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "PullInnerStrengthAds" : {
+                            "Value" : 0.7,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "PullOuterStrengthAds" : {
+                            "Value" : 0.4,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "PullLerpInRate" : {
+                            "Value" : 60,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "PullLerpOutRate" : {
+                            "Value" : 4,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "PullMaxRotationRate" : {
+                            "Value" : 0,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "SlowInnerStrengthHip" : {
+                            "Value" : 0.6,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "SlowOuterStrengthHip" : {
+                            "Value" : 0.5,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "SlowInnerStrengthAds" : {
+                            "Value" : 0.7,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "SlowOuterStrengthAds" : {
+                            "Value" : 0.4,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "SlowLerpInRate" : {
+                            "Value" : 60,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "SlowLerpOutRate" : {
+                            "Value" : 4,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "SlowMinRotationRate" : {
+                            "Value" : 0,
+                            "Curve" : {
+                                "CurveTable" : null,
+                                "RowName" : "None"
+                            },
+                            "RegistryType" : {
+                                "Name" : "None"
+                            }
+                        },
+                        "MaxNumberOfTargets" : 6,
+                        "ReticleDepth" : 10000,
+                        "TargetScore_AssistWeight" : 10,
+                        "TargetScore_ViewDot" : 50,
+                        "TargetScore_ViewDotOffset" : 40,
+                        "TargetScore_ViewDistance" : 0.25,
+                        "StrengthScale" : 1,
+                        "bEnableAsyncVisibilityTrace" : true,
+                        "bRequireInput" : true,
+                        "bApplyPull" : true,
+                        "bApplyStrafePullScale" : true,
+                        "bApplySlowing" : true,
+                        "bUseDynamicSlow" : true,
+                        "bUseRadialLookRates" : true
+                    },
+                    "Filter" : {
+                        "bIncludeSameFriendlyTargets" : false,
+                        "bExcludeInstigator" : true,
+                        "bExcludeAllAttachedToInstigator" : false,
+                        "bExcludeRequester" : true,
+                        "bExcludeAllAttachedToRequester" : false,
+                        "bTraceComplexCollision" : false,
+                        "bExcludeDeadOrDying" : true,
+                        "ExcludedClasses" : [],
+                        "TargetRange" : 10000
+                    },
+                    "MoveInputAction" : "/Game/Input/Actions/IA_Move",
+                    "TargetingType" : "ADS",
+                    "SensitivityLevelTable" : "/ShooterCore/Input/Settings/GamepadAimSensitivity_Targeting",
+                    "TargetCache0" : [],
+                    "TargetCache1" : []
+                }
+            ]
+        }
+    ]
+}

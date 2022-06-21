@@ -1,0 +1,47 @@
+// /ShooterCore/Bot/BT/BB_Lyra_Shooter_Bot
+{
+    "$type" : "BlackboardData",
+    "Parent" : null,
+    "ParentKeys" : [],
+    "Keys" : [
+        {
+            "EntryName" : "SelfActor",
+            "EntryDescription" : "",
+            "EntryCategory" : "None",
+            "KeyType" : {
+                "$type" : "BlackboardKeyType_Object",
+                "BaseClass" : "Actor"
+            },
+            "bInstanceSynced" : false
+        },
+        {
+            "EntryName" : "TargetEnemy",
+            "EntryDescription" : "",
+            "EntryCategory" : "None",
+            "KeyType" : {
+                "$type" : "BlackboardKeyType_Object",
+                "BaseClass" : "LyraCharacter"
+            },
+            "bInstanceSynced" : false
+        },
+        {
+            "EntryName" : "MoveGoal",
+            "EntryDescription" : "",
+            "EntryCategory" : "None",
+            "KeyType" : {
+                "$type" : "BlackboardKeyType_Vector"
+            },
+            "bInstanceSynced" : false
+        },
+        {
+            "EntryName" : "OutOfAmmo",
+            "EntryDescription" : "",
+            "EntryCategory" : "None",
+            "KeyType" : {
+                "$type" : "BlackboardKeyType_Bool"
+            },
+            "bInstanceSynced" : false
+        }
+    ],
+    "bHasSynchronizedKeys" : false
+}

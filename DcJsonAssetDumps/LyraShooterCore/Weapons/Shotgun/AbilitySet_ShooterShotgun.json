@@ -1,0 +1,23 @@
+// /ShooterCore/Weapons/Shotgun/AbilitySet_ShooterShotgun
+{
+    "$type" : "LyraAbilitySet",
+    "GrantedGameplayAbilities" : [
+        {
+            "Ability" : "/ShooterCore/Weapons/Shotgun/GA_Weapon_Fire_Shotgun",
+            "AbilityLevel" : 1,
+            "InputTag" : "InputTag.Weapon.FireAuto"
+        },
+        {
+            "Ability" : "/ShooterCore/Weapons/Shotgun/GA_Weapon_Reload_Shotgun",
+            "AbilityLevel" : 1,
+            "InputTag" : "InputTag.Weapon.Reload"
+        },
+        {
+            "Ability" : "/Game/Weapons/GA_Weapon_AutoReload",
+            "AbilityLevel" : 1,
+            "InputTag" : null
+        }
+    ],
+    "GrantedGameplayEffects" : [],
+    "GrantedAttributes" : []
+}

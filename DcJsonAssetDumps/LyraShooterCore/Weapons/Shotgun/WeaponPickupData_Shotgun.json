@@ -1,0 +1,21 @@
+// /ShooterCore/Weapons/Shotgun/WeaponPickupData_Shotgun
+{
+    "$type" : "LyraWeaponPickupDefinition",
+    "WeaponMeshOffset" : {
+        "X" : 0,
+        "Y" : 0,
+        "Z" : 0
+    },
+    "WeaponMeshScale" : {
+        "X" : 1.5,
+        "Y" : 1.5,
+        "Z" : 1.5
+    },
+    "InventoryItemDefinition" : "/ShooterCore/Weapons/Shotgun/ID_Shotgun",
+    "DisplayMesh" : "/Game/Weapons/Shotgun/Mesh/SM_Shotgun",
+    "SpawnCoolDownSeconds" : 10,
+    "PickedUpSound" : "/Game/Audio/MetaSounds/sfx_Interactable_WeaponPad_Collect_nl_metaPreset",
+    "RespawnedSound" : "/Game/Audio/MetaSounds/sfx_Interactable_WeaponPad_Replenish_nl_metaPreset",
+    "PickedUpEffect" : null,
+    "RespawnedEffect" : null
+}

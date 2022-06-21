@@ -1,0 +1,38 @@
+// /ShooterCore/Experiences/LAS_ShooterGame_StandardComponents
+{
+    "$type" : "LyraExperienceActionSet",
+    "Actions" : [
+        {
+            "$type" : "GameFeatureAction_AddComponents",
+            "ComponentList" : [
+                {
+                    "ActorClass" : "LyraPlayerController",
+                    "ComponentClass" : "/Game/Effects/Blueprints/B_NiagaraNumberPopComponent",
+                    "bClientComponent" : true,
+                    "bServerComponent" : false
+                },
+                {
+                    "ActorClass" : "Controller",
+                    "ComponentClass" : "/ShooterCore/Game/B_QuickBarComponent",
+                    "bClientComponent" : true,
+                    "bServerComponent" : true
+                },
+                {
+                    "ActorClass" : "LyraPlayerController",
+                    "ComponentClass" : "/Game/UI/Indicators/NameplateManagerComponent",
+                    "bClientComponent" : true,
+                    "bServerComponent" : false
+                },
+                {
+                    "ActorClass" : "/ShooterCore/Game/B_Hero_ShooterMannequin",
+                    "ComponentClass" : "/Game/UI/Indicators/NameplateSource",
+                    "bClientComponent" : true,
+                    "bServerComponent" : false
+                }
+            ]
+        }
+    ],
+    "GameFeaturesToEnable" : [
+        "ShooterCore"
+    ]
+}

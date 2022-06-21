@@ -1,0 +1,137 @@
+// /Game/Vehicle/vehCar_vehicle03/vehCar_vehicle03_TrafficVehicleAgentConfig
+{
+    "$type" : "MassEntityConfigAsset",
+    "Config" : {
+        "Parent" : "/Game/AI/Traffic/MassTrafficVehicleAgentConfig",
+        "Traits" : [
+            {
+                "$type" : "MassTrafficVehicleVisualizationTrait",
+                "StaticMeshInstanceDesc" : {
+                    "Meshes" : [
+                        {
+                            "Mesh" : "/Game/Vehicle/vehCar_vehicle03/Mesh/SM_vehCar_vehicle03",
+                            "MaterialOverrides" : [],
+                            "MinLODSignificance" : 0,
+                            "MaxLODSignificance" : 4,
+                            "bCastShadows" : true,
+                            "Mobility" : "Movable"
+                        }
+                    ],
+                    "bUseTransformOffset" : false,
+                    "TransformOffset" : {
+                        "Rotation" : {
+                            "X" : 0,
+                            "Y" : 0,
+                            "Z" : 0,
+                            "W" : 1
+                        },
+                        "Translation" : {
+                            "X" : 0,
+                            "Y" : 0,
+                            "Z" : 0
+                        },
+                        "Scale3D" : {
+                            "X" : 1,
+                            "Y" : 1,
+                            "Z" : 1
+                        }
+                    }
+                },
+                "HighResTemplateActor" : "/Game/Vehicle/vehCar_vehicle03/BP_vehCar_vehicle03_Sandbox",
+                "LowResTemplateActor" : "/Game/Vehicle/vehCar_vehicle03/BP_vehCar_vehicle03",
+                "RepresentationSubsystemClass" : "MassRepresentationSubsystem",
+                "Params" : {
+                    "RepresentationActorManagementClass" : "MassTrafficVehicleRepresentationActorManagement",
+                    "LODRepresentation" : [
+                        "HighResSpawnedActor",
+                        "LowResSpawnedActor",
+                        "StaticMeshInstance",
+                        "None"
+                    ],
+                    "bKeepLowResActors" : false,
+                    "bKeepActorExtraFrame" : false,
+                    "bSpreadFirstVisualizationUpdate" : false,
+                    "WorldPartitionGridNameContainingCollision" : "None",
+                    "NotVisibleUpdateRate" : 0.5,
+                    "CachedDefaultRepresentationType" : "None",
+                    "CachedRepresentationActorManagement" : null
+                },
+                "LODParams" : {
+                    "BaseLODDistance" : [
+                        0,
+                        4000,
+                        4500,
+                        60000
+                    ],
+                    "VisibleLODDistance" : [
+                        0,
+                        8000,
+                        10000,
+                        100000
+                    ],
+                    "BufferHysteresisOnDistancePercentage" : 10,
+                    "LODMaxCount" : [
+                        10,
+                        40,
+                        2147483647,
+                        2147483647
+                    ],
+                    "DistanceToFrustum" : 0,
+                    "DistanceToFrustumHysteresis" : 0,
+                    "FilterTag" : "MassTrafficVehicleTag"
+                }
+            },
+            {
+                "$type" : "MassTrafficVehicleSimulationTrait",
+                "Params" : {
+                    "HalfLength" : 284.333,
+                    "HalfWidth" : 109.418,
+                    "FrontAxleX" : 151.984,
+                    "RearAxleX" : -145.408,
+                    "bRestrictedToTrunkLanesOnly" : false,
+                    "PhysicsVehicleTemplateActor" : "/Game/Vehicle/vehCar_vehicle03/BP_vehCar_vehicle03_Sandbox"
+                },
+                "VariableTickParams" : {
+                    "TickRates" : [
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "bSpreadFirstSimulationUpdate" : false
+                }
+            },
+            {
+                "$type" : "WorldAudioDataMassEntityTrait",
+                "AudioController" : "Sedan"
+            },
+            {
+                "$type" : "MassTrafficDriverVisualizationTrait",
+                "Params" : {
+                    "DriverTypesData" : "/Game/AI/Traffic/Drivers/CitySampleTrafficDrivers",
+                    "DriversSeatOffset" : {
+                        "Rotation" : {
+                            "X" : 0,
+                            "Y" : 0,
+                            "Z" : 0.70710700750350952,
+                            "W" : -0.70710700750350952
+                        },
+                        "Translation" : {
+                            "X" : 8,
+                            "Y" : -42,
+                            "Z" : 40.995262145996094
+                        },
+                        "Scale3D" : {
+                            "X" : 1,
+                            "Y" : 1,
+                            "Z" : 1
+                        }
+                    },
+                    "AnimStateVariationOverride" : "None",
+                    "DriverTypesStaticMeshDescIndex" : []
+                },
+                "RepresentationSubsystemClass" : "MassRepresentationSubsystem"
+            }
+        ]
+    }
+}

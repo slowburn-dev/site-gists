@@ -1,0 +1,24 @@
+// /ShooterCore/Experiences/LAS_ShooterGame_SharedInput
+{
+    "$type" : "LyraExperienceActionSet",
+    "Actions" : [
+        {
+            "$type" : "GameFeatureAction_AddInputContextMapping",
+            "InputMappings" : [
+                {
+                    "InputMapping" : "/ShooterCore/Input/Mappings/IMC_ShooterGame_KBM",
+                    "Priority" : 1
+                }
+            ]
+        },
+        {
+            "$type" : "GameFeatureAction_AddInputBinding",
+            "InputConfigs" : [
+                "/ShooterCore/Input/Actions/InputData_ShooterGame_AddOns"
+            ]
+        }
+    ],
+    "GameFeaturesToEnable" : [
+        "ShooterCore"
+    ]
+}

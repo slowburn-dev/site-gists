@@ -1,0 +1,228 @@
+// /ShooterCore/ShooterCore
+{
+    "$type" : "GameFeatureData",
+    "Actions" : [
+        {
+            "$type" : "GameFeatureAction_AddComponents",
+            "ComponentList" : [
+                {
+                    "ActorClass" : "GameStateBase",
+                    "ComponentClass" : "/ShooterCore/Accolades/B_EliminationFeedRelay",
+                    "bClientComponent" : true,
+                    "bServerComponent" : true
+                },
+                {
+                    "ActorClass" : "LyraCharacter",
+                    "ComponentClass" : "LyraEquipmentManagerComponent",
+                    "bClientComponent" : true,
+                    "bServerComponent" : true
+                },
+                {
+                    "ActorClass" : "LyraPlayerController",
+                    "ComponentClass" : "LyraIndicatorManagerComponent",
+                    "bClientComponent" : true,
+                    "bServerComponent" : false
+                },
+                {
+                    "ActorClass" : "Controller",
+                    "ComponentClass" : "LyraInventoryManagerComponent",
+                    "bClientComponent" : true,
+                    "bServerComponent" : true
+                },
+                {
+                    "ActorClass" : "Controller",
+                    "ComponentClass" : "LyraWeaponStateComponent",
+                    "bClientComponent" : true,
+                    "bServerComponent" : true
+                },
+                {
+                    "ActorClass" : "LyraGameState",
+                    "ComponentClass" : "/ShooterCore/Input/Components/B_AimAssistTargetManager",
+                    "bClientComponent" : true,
+                    "bServerComponent" : false
+                }
+            ]
+        },
+        {
+            "$type" : "GameFeatureAction_DataRegistry",
+            "RegistriesToAdd" : [
+                "/ShooterCore/Accolades/AccoladeDataRegistry"
+            ]
+        },
+        {
+            "$type" : "GameFeatureAction_AddGameplayCuePath",
+            "DirectoryPathsToAdd" : [
+                {
+                    "Path" : "/GameplayCues"
+                },
+                {
+                    "Path" : "/Weapons"
+                },
+                {
+                    "Path" : "/Items"
+                }
+            ]
+        },
+        {
+            "$type" : "GameFeatureAction_AddInputConfig",
+            "InputConfigs" : [
+                {
+                    "Config" : "/Game/Input/Configs/PMI_Default_KBM",
+                    "Type" : "MouseAndKeyboard",
+                    "DependentPlatformTraits" : [
+                        "Platform.Trait.Input.SupportsMouseAndKeyboard"
+                    ],
+                    "ExcludedPlatformTraits" : [],
+                    "bShouldActivateAutomatically" : true
+                },
+                {
+                    "Config" : "/Game/Input/Configs/PMI_Default_Gamepad",
+                    "Type" : "Gamepad",
+                    "DependentPlatformTraits" : [],
+                    "ExcludedPlatformTraits" : [],
+                    "bShouldActivateAutomatically" : true
+                },
+                {
+                    "Config" : "/ShooterCore/Input/Configs/PMI_ShooterDefaultConfig_KBM",
+                    "Type" : "MouseAndKeyboard",
+                    "DependentPlatformTraits" : [
+                        "Platform.Trait.Input.SupportsMouseAndKeyboard"
+                    ],
+                    "ExcludedPlatformTraits" : [],
+                    "bShouldActivateAutomatically" : true
+                },
+                {
+                    "Config" : "/ShooterCore/Input/Configs/PMI_ShooterDefaultConfig_Gamepad",
+                    "Type" : "Gamepad",
+                    "DependentPlatformTraits" : [],
+                    "ExcludedPlatformTraits" : [],
+                    "bShouldActivateAutomatically" : true
+                }
+            ]
+        }
+    ],
+    "PrimaryAssetTypesToScan" : [
+        {
+            "PrimaryAssetType" : "LyraExperienceDefinition",
+            "AssetBaseClass" : "LyraExperienceDefinition",
+            "AssetBaseClassLoaded" : "Object",
+            "bHasBlueprintClasses" : true,
+            "bIsEditorOnly" : false,
+            "Directories" : [
+                {
+                    "Path" : "Experiences"
+                },
+                {
+                    "Path" : "System/Experiences"
+                }
+            ],
+            "SpecificAssets" : [],
+            "Rules" : {
+                "Priority" : -1,
+                "ChunkId" : -1,
+                "bApplyRecursively" : true,
+                "CookRule" : "Unknown"
+            },
+            "AssetScanPaths" : [],
+            "bIsDynamicAsset" : false,
+            "NumberOfAssets" : 0
+        },
+        {
+            "PrimaryAssetType" : "LyraUserFacingExperienceDefinition",
+            "AssetBaseClass" : "LyraUserFacingExperienceDefinition",
+            "AssetBaseClassLoaded" : "Object",
+            "bHasBlueprintClasses" : false,
+            "bIsEditorOnly" : false,
+            "Directories" : [
+                {
+                    "Path" : "System/Playlists"
+                }
+            ],
+            "SpecificAssets" : [],
+            "Rules" : {
+                "Priority" : -1,
+                "ChunkId" : -1,
+                "bApplyRecursively" : true,
+                "CookRule" : "AlwaysCook"
+            },
+            "AssetScanPaths" : [],
+            "bIsDynamicAsset" : false,
+            "NumberOfAssets" : 0
+        },
+        {
+            "PrimaryAssetType" : "LyraExperienceActionSet",
+            "AssetBaseClass" : "LyraExperienceActionSet",
+            "AssetBaseClassLoaded" : "Object",
+            "bHasBlueprintClasses" : false,
+            "bIsEditorOnly" : false,
+            "Directories" : [
+                {
+                    "Path" : "Experiences"
+                },
+                {
+                    "Path" : "/System/Experiences"
+                },
+                {
+                    "Path" : "Accolades"
+                }
+            ],
+            "SpecificAssets" : [],
+            "Rules" : {
+                "Priority" : -1,
+                "ChunkId" : -1,
+                "bApplyRecursively" : true,
+                "CookRule" : "AlwaysCook"
+            },
+            "AssetScanPaths" : [],
+            "bIsDynamicAsset" : false,
+            "NumberOfAssets" : 0
+        },
+        {
+            "PrimaryAssetType" : "Map",
+            "AssetBaseClass" : "World",
+            "AssetBaseClassLoaded" : "Object",
+            "bHasBlueprintClasses" : false,
+            "bIsEditorOnly" : false,
+            "Directories" : [
+                {
+                    "Path" : "/Maps"
+                }
+            ],
+            "SpecificAssets" : [],
+            "Rules" : {
+                "Priority" : -1,
+                "ChunkId" : -1,
+                "bApplyRecursively" : true,
+                "CookRule" : "Unknown"
+            },
+            "AssetScanPaths" : [],
+            "bIsDynamicAsset" : false,
+            "NumberOfAssets" : 0
+        },
+        {
+            "PrimaryAssetType" : "PlayerMappableInputConfig",
+            "AssetBaseClass" : "PlayerMappableInputConfig",
+            "AssetBaseClassLoaded" : "Object",
+            "bHasBlueprintClasses" : false,
+            "bIsEditorOnly" : false,
+            "Directories" : [
+                {
+                    "Path" : "/ShooterCore/Input/Configs"
+                },
+                {
+                    "Path" : "/Game/Input/Configs"
+                }
+            ],
+            "SpecificAssets" : [],
+            "Rules" : {
+                "Priority" : -1,
+                "ChunkId" : -1,
+                "bApplyRecursively" : true,
+                "CookRule" : "Unknown"
+            },
+            "AssetScanPaths" : [],
+            "bIsDynamicAsset" : false,
+            "NumberOfAssets" : 0
+        }
+    ]
+}

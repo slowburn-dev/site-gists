@@ -1,0 +1,14 @@
+// /ShooterCore/Input/Configs/PMI_ShooterDefaultConfig_Gamepad
+{
+    "$type" : "PlayerMappableInputConfig",
+    "ConfigName" : "ShooterCoreDefault_Gamepad",
+    "ConfigDisplayName" : "Shooter Gamepad",
+    "bIsDeprecated" : false,
+    "Metadata" : null,
+    "Contexts" : [
+        {
+            "$key" : "/ShooterCore/Input/Mappings/IMC_ShooterGame_Gamepad",
+            "$value" : 10
+        }
+    ]
+}

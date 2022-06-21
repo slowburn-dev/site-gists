@@ -1,0 +1,13 @@
+// /ShooterCore/Items/HealthPickup_Unused/AbilitySet_HealPickup
+{
+    "$type" : "LyraAbilitySet",
+    "GrantedGameplayAbilities" : [
+        {
+            "Ability" : "/ShooterCore/Items/HealthPickup_Unused/GA_HealPickup",
+            "AbilityLevel" : 1,
+            "InputTag" : "InputTag.Weapon.Fire"
+        }
+    ],
+    "GrantedGameplayEffects" : [],
+    "GrantedAttributes" : []
+}

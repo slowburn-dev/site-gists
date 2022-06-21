@@ -1,0 +1,9 @@
+// /ShooterCore/Bot/EQS/EQS_FindControlPoint
+{
+    "$type" : "EnvQuery",
+    "EdGraph" : "EnvironmentQueryGraph'/ShooterCore/Bot/EQS/EQS_FindControlPoint.EQS_FindControlPoint:EnvironmentQueryGraph_0'",
+    "QueryName" : "EQS_FindControlPoint",
+    "Options" : [
+        "EnvQueryOption'/ShooterCore/Bot/EQS/EQS_FindControlPoint.EQS_FindControlPoint:EnvQueryOption_3'"
+    ]
+}

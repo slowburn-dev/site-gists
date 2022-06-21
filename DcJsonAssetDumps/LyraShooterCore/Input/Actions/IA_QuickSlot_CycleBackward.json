@@ -1,0 +1,10 @@
+// /ShooterCore/Input/Actions/IA_QuickSlot_CycleBackward
+{
+    "$type" : "InputAction",
+    "bConsumeInput" : true,
+    "bTriggerWhenPaused" : false,
+    "bReserveAllMappings" : false,
+    "ValueType" : "Boolean",
+    "Triggers" : [],
+    "Modifiers" : []
+}

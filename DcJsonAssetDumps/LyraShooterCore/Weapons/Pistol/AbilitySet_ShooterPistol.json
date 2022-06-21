@@ -1,0 +1,23 @@
+// /ShooterCore/Weapons/Pistol/AbilitySet_ShooterPistol
+{
+    "$type" : "LyraAbilitySet",
+    "GrantedGameplayAbilities" : [
+        {
+            "Ability" : "/ShooterCore/Weapons/Pistol/GA_Weapon_Fire_Pistol",
+            "AbilityLevel" : 1,
+            "InputTag" : "InputTag.Weapon.Fire"
+        },
+        {
+            "Ability" : "/Game/Weapons/Pistol/GA_Weapon_Reload_Pistol",
+            "AbilityLevel" : 1,
+            "InputTag" : "InputTag.Weapon.Reload"
+        },
+        {
+            "Ability" : "/Game/Weapons/GA_Weapon_AutoReload",
+            "AbilityLevel" : 1,
+            "InputTag" : null
+        }
+    ],
+    "GrantedGameplayEffects" : [],
+    "GrantedAttributes" : []
+}

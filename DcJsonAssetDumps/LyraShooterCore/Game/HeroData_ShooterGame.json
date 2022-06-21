@@ -1,0 +1,11 @@
+// /ShooterCore/Game/HeroData_ShooterGame
+{
+    "$type" : "LyraPawnData",
+    "PawnClass" : "/ShooterCore/Game/B_Hero_ShooterMannequin",
+    "AbilitySets" : [
+        "/ShooterCore/Game/AbilitySet_ShooterHero"
+    ],
+    "TagRelationshipMapping" : "/ShooterCore/Game/TagRelationships_ShooterHero",
+    "InputConfig" : "/Game/Input/InputData_Hero",
+    "DefaultCameraMode" : "/Game/Characters/Cameras/CM_ThirdPerson"
+}

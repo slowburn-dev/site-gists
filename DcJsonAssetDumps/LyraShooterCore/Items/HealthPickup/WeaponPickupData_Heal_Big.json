@@ -1,0 +1,21 @@
+// /ShooterCore/Items/HealthPickup/WeaponPickupData_Heal_Big
+{
+    "$type" : "LyraWeaponPickupDefinition",
+    "WeaponMeshOffset" : {
+        "X" : 0,
+        "Y" : 0,
+        "Z" : 15
+    },
+    "WeaponMeshScale" : {
+        "X" : 1.5,
+        "Y" : 1.5,
+        "Z" : 1.5
+    },
+    "InventoryItemDefinition" : "/ShooterCore/Weapons/Pistol/ID_Pistol",
+    "DisplayMesh" : "/Game/Weapons/Healthpack/Mesh/SM_healthpackFull",
+    "SpawnCoolDownSeconds" : 25,
+    "PickedUpSound" : "/Game/Audio/MetaSounds/sfx_Interactable_WeaponPad_Collect_nl_metaPreset",
+    "RespawnedSound" : "/Game/Audio/MetaSounds/sfx_Interactable_WeaponPad_Replenish_nl_metaPreset",
+    "PickedUpEffect" : null,
+    "RespawnedEffect" : null
+}

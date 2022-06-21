@@ -1,0 +1,9 @@
+// /ShooterCore/Bot/EQS/EQS_MoveAgainstEnnemy
+{
+    "$type" : "EnvQuery",
+    "EdGraph" : "EnvironmentQueryGraph'/ShooterCore/Bot/EQS/EQS_MoveAgainstEnnemy.EQS_MoveAgainstEnnemy:EnvironmentQueryGraph_0'",
+    "QueryName" : "EQS_MoveAgainstEnnemy",
+    "Options" : [
+        "EnvQueryOption'/ShooterCore/Bot/EQS/EQS_MoveAgainstEnnemy.EQS_MoveAgainstEnnemy:EnvQueryOption_1'"
+    ]
+}

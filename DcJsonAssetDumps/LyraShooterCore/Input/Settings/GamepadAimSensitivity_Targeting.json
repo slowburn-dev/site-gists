@@ -1,0 +1,46 @@
+// /ShooterCore/Input/Settings/GamepadAimSensitivity_Targeting
+{
+    "$type" : "LyraAimSensitivityData",
+    "SensitivityMap" : [
+        {
+            "$key" : "Slow",
+            "$value" : 0.25
+        },
+        {
+            "$key" : "SlowPlus",
+            "$value" : 0.3
+        },
+        {
+            "$key" : "SlowPlusPlus",
+            "$value" : 0.4
+        },
+        {
+            "$key" : "Normal",
+            "$value" : 0.5
+        },
+        {
+            "$key" : "NormalPlus",
+            "$value" : 0.6
+        },
+        {
+            "$key" : "NormalPlusPlus",
+            "$value" : 0.7
+        },
+        {
+            "$key" : "Fast",
+            "$value" : 0.8
+        },
+        {
+            "$key" : "FastPlus",
+            "$value" : 0.9
+        },
+        {
+            "$key" : "FastPlusPlus",
+            "$value" : 1
+        },
+        {
+            "$key" : "Insane",
+            "$value" : 1.1
+        }
+    ]
+}

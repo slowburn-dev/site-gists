@@ -1,0 +1,18 @@
+// /ShooterCore/ControlPoint/AbilitySet_ControlPoint
+{
+    "$type" : "LyraAbilitySet",
+    "GrantedGameplayAbilities" : [
+        {
+            "Ability" : "/ShooterCore/ControlPoint/GA_ShowLeaderboard_CP",
+            "AbilityLevel" : 1,
+            "InputTag" : "InputTag.Ability.ShowLeaderboard"
+        },
+        {
+            "Ability" : "/ShooterCore/Game/Respawn/GA_AutoRespawn",
+            "AbilityLevel" : 1,
+            "InputTag" : null
+        }
+    ],
+    "GrantedGameplayEffects" : [],
+    "GrantedAttributes" : []
+}

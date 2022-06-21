@@ -1,0 +1,18 @@
+// /ShooterCore/Weapons/NetShooter_PROTO/AbilitySet_ShooterNetShooter
+{
+    "$type" : "LyraAbilitySet",
+    "GrantedGameplayAbilities" : [
+        {
+            "Ability" : "/ShooterCore/Weapons/NetShooter_PROTO/GA_WeaponNetShooter",
+            "AbilityLevel" : 1,
+            "InputTag" : "InputTag.Weapon.FireAuto"
+        },
+        {
+            "Ability" : "/ShooterCore/Weapons/Shotgun/GA_Weapon_Reload_NetShooter",
+            "AbilityLevel" : 1,
+            "InputTag" : "InputTag.Weapon.Reload"
+        }
+    ],
+    "GrantedGameplayEffects" : [],
+    "GrantedAttributes" : []
+}

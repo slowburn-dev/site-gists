@@ -1,0 +1,36 @@
+// /ShooterCore/Accolades/EAS_BasicShooterAcolades
+{
+    "$type" : "LyraExperienceActionSet",
+    "Actions" : [
+        {
+            "$type" : "GameFeatureAction_AddComponents",
+            "ComponentList" : [
+                {
+                    "ActorClass" : "GameStateBase",
+                    "ComponentClass" : "/ShooterCore/Accolades/B_ElimChainProcessor",
+                    "bClientComponent" : false,
+                    "bServerComponent" : true
+                },
+                {
+                    "ActorClass" : "GameStateBase",
+                    "ComponentClass" : "/ShooterCore/Accolades/B_ElimStreakProcessor",
+                    "bClientComponent" : false,
+                    "bServerComponent" : true
+                },
+                {
+                    "ActorClass" : "GameStateBase",
+                    "ComponentClass" : "AssistProcessor",
+                    "bClientComponent" : false,
+                    "bServerComponent" : true
+                },
+                {
+                    "ActorClass" : "GameStateBase",
+                    "ComponentClass" : "/ShooterCore/Accolades/B_AccoladeRelay",
+                    "bClientComponent" : true,
+                    "bServerComponent" : true
+                }
+            ]
+        }
+    ],
+    "GameFeaturesToEnable" : []
+}

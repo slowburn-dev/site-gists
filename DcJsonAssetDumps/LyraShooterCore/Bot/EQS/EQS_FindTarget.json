@@ -1,0 +1,9 @@
+// /ShooterCore/Bot/EQS/EQS_FindTarget
+{
+    "$type" : "EnvQuery",
+    "EdGraph" : "EnvironmentQueryGraph'/ShooterCore/Bot/EQS/EQS_FindTarget.EQS_FindTarget:EnvironmentQueryGraph_0'",
+    "QueryName" : "EQS_FindTarget",
+    "Options" : [
+        "EnvQueryOption'/ShooterCore/Bot/EQS/EQS_FindTarget.EQS_FindTarget:EnvQueryOption_0'"
+    ]
+}

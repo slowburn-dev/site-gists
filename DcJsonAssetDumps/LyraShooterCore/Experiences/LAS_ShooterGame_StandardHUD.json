@@ -1,0 +1,64 @@
+// /ShooterCore/Experiences/LAS_ShooterGame_StandardHUD
+{
+    "$type" : "LyraExperienceActionSet",
+    "Actions" : [
+        {
+            "$type" : "GameFeatureAction_AddWidgets",
+            "Layout" : [
+                {
+                    "LayoutClass" : "/ShooterCore/UserInterface/W_ShooterHUDLayout",
+                    "LayerID" : "UI.Layer.Game"
+                }
+            ],
+            "Widgets" : [
+                {
+                    "WidgetClass" : "/ShooterCore/UserInterface/Notifications/EliminationFeed/W_EliminationFeed",
+                    "SlotID" : "HUD.Slot.EliminationFeed"
+                },
+                {
+                    "WidgetClass" : "/ShooterCore/UserInterface/HUD/W_QuickBar",
+                    "SlotID" : "HUD.Slot.Equipment"
+                },
+                {
+                    "WidgetClass" : "/ShooterCore/UserInterface/Notifications/Accolades/W_AccoladeHostWidget",
+                    "SlotID" : "HUD.Slot.TopAccolades"
+                },
+                {
+                    "WidgetClass" : "/ShooterCore/UserInterface/HUD/W_WeaponReticleHost",
+                    "SlotID" : "HUD.Slot.Reticle"
+                },
+                {
+                    "WidgetClass" : "/Game/UI/PerfStats/W_PerfStatContainer_GraphOnly",
+                    "SlotID" : "HUD.Slot.PerfStats.Graph"
+                },
+                {
+                    "WidgetClass" : "/Game/UI/PerfStats/W_PerfStatContainer_TextOnly",
+                    "SlotID" : "HUD.Slot.PerfStats.Text"
+                },
+                {
+                    "WidgetClass" : "/Game/UI/Hud/W_OnScreenJoystick_Left",
+                    "SlotID" : "HUD.Slot.LeftSideTouchInputs"
+                },
+                {
+                    "WidgetClass" : "/Game/UI/Hud/W_OnScreenJoystick_Right",
+                    "SlotID" : "HUD.Slot.RightSideTouchInputs"
+                },
+                {
+                    "WidgetClass" : "/ShooterCore/UserInterface/W_FireButton",
+                    "SlotID" : "HUD.Slot.RightSideTouchInputs"
+                },
+                {
+                    "WidgetClass" : "/Game/UI/Hud/W_TouchRegion_Right",
+                    "SlotID" : "HUD.Slot.RightSideTouchRegion"
+                },
+                {
+                    "WidgetClass" : "/ShooterCore/Input/W_TouchRegion_Left",
+                    "SlotID" : "HUD.Slot.LeftSideTouchRegion"
+                }
+            ]
+        }
+    ],
+    "GameFeaturesToEnable" : [
+        "ShooterCore"
+    ]
+}

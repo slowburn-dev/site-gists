@@ -1,0 +1,316 @@
+// /ShooterCore/Input/Mappings/IMC_ShooterGame_KBM
+{
+    "$type" : "InputMappingContext",
+    "ContextDescription" : "Shooter Game IMC",
+    "Mappings" : [
+        {
+            "Action" : "/ShooterCore/Input/Actions/IA_ShowScoreboard",
+            "Key" : {
+                "KeyName" : "Tab"
+            },
+            "bIsPlayerMappable" : true,
+            "PlayerMappableOptions" : {
+                "Name" : "ShowScoreboard",
+                "DisplayName" : "Show Scoreboard",
+                "DisplayCategory" : ""
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [],
+            "Modifiers" : []
+        },
+        {
+            "Action" : "/ShooterCore/Input/Actions/IA_ADS",
+            "Key" : {
+                "KeyName" : "RightMouseButton"
+            },
+            "bIsPlayerMappable" : true,
+            "PlayerMappableOptions" : {
+                "Name" : "ADS_Keyboard",
+                "DisplayName" : "Aim Down Sight",
+                "DisplayCategory" : "Shooter Core"
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [],
+            "Modifiers" : []
+        },
+        {
+            "Action" : "/ShooterCore/Input/Actions/IA_Grenade",
+            "Key" : {
+                "KeyName" : "Q"
+            },
+            "bIsPlayerMappable" : true,
+            "PlayerMappableOptions" : {
+                "Name" : "Grenade_Keyboard",
+                "DisplayName" : "Throw Grenade",
+                "DisplayCategory" : "Shooter Core"
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [
+                {
+                    "$type" : "InputTriggerPressed",
+                    "ActuationThreshold" : 0.5,
+                    "LastValue" : {}
+                }
+            ],
+            "Modifiers" : []
+        },
+        {
+            "Action" : "/ShooterCore/Input/Actions/IA_Emote",
+            "Key" : {
+                "KeyName" : "B"
+            },
+            "bIsPlayerMappable" : true,
+            "PlayerMappableOptions" : {
+                "Name" : "Emote_Keyboard",
+                "DisplayName" : "Emote",
+                "DisplayCategory" : "Shooter Core"
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [
+                {
+                    "$type" : "InputTriggerTap",
+                    "TapReleaseTimeThreshold" : 0.2,
+                    "HeldDuration" : 0,
+                    "bAffectedByTimeDilation" : false,
+                    "ActuationThreshold" : 0.5,
+                    "LastValue" : {}
+                }
+            ],
+            "Modifiers" : []
+        },
+        {
+            "Action" : "/ShooterCore/Input/Actions/IA_Emote",
+            "Key" : {
+                "KeyName" : "None"
+            },
+            "bIsPlayerMappable" : true,
+            "PlayerMappableOptions" : {
+                "Name" : "Emote_Secondary",
+                "DisplayName" : "Emote",
+                "DisplayCategory" : "Shooter Core"
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [
+                {
+                    "$type" : "InputTriggerTap",
+                    "TapReleaseTimeThreshold" : 0.2,
+                    "HeldDuration" : 0,
+                    "bAffectedByTimeDilation" : false,
+                    "ActuationThreshold" : 0.5,
+                    "LastValue" : {}
+                }
+            ],
+            "Modifiers" : []
+        },
+        {
+            "Action" : "/ShooterCore/Input/Actions/IA_QuickSlot1",
+            "Key" : {
+                "KeyName" : "One"
+            },
+            "bIsPlayerMappable" : true,
+            "PlayerMappableOptions" : {
+                "Name" : "QuickSlot_1",
+                "DisplayName" : "Quick Slot 1",
+                "DisplayCategory" : ""
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [],
+            "Modifiers" : []
+        },
+        {
+            "Action" : "/ShooterCore/Input/Actions/IA_QuickSlot2",
+            "Key" : {
+                "KeyName" : "Two"
+            },
+            "bIsPlayerMappable" : true,
+            "PlayerMappableOptions" : {
+                "Name" : "QuickSlot_2",
+                "DisplayName" : "Quick Slot 2",
+                "DisplayCategory" : ""
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [],
+            "Modifiers" : []
+        },
+        {
+            "Action" : "/ShooterCore/Input/Actions/IA_QuickSlot3",
+            "Key" : {
+                "KeyName" : "Three"
+            },
+            "bIsPlayerMappable" : true,
+            "PlayerMappableOptions" : {
+                "Name" : "QuickSlot_3",
+                "DisplayName" : "Quick Slot 3",
+                "DisplayCategory" : ""
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [],
+            "Modifiers" : []
+        },
+        {
+            "Action" : "/ShooterCore/Input/Actions/IA_Melee",
+            "Key" : {
+                "KeyName" : "C"
+            },
+            "bIsPlayerMappable" : true,
+            "PlayerMappableOptions" : {
+                "Name" : "Melee",
+                "DisplayName" : "Melee",
+                "DisplayCategory" : ""
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [],
+            "Modifiers" : []
+        },
+        {
+            "Action" : "/ShooterCore/Input/Actions/IA_Melee",
+            "Key" : {
+                "KeyName" : "E"
+            },
+            "bIsPlayerMappable" : true,
+            "PlayerMappableOptions" : {
+                "Name" : "Melee_Secondary",
+                "DisplayName" : "Melee",
+                "DisplayCategory" : ""
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [],
+            "Modifiers" : []
+        },
+        {
+            "Action" : "/ShooterCore/Input/Actions/IA_QuickSlot_CycleBackward",
+            "Key" : {
+                "KeyName" : "MouseScrollDown"
+            },
+            "bIsPlayerMappable" : true,
+            "PlayerMappableOptions" : {
+                "Name" : "QuickslotCycleBackward",
+                "DisplayName" : "Quickslot Cycle Backward",
+                "DisplayCategory" : ""
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [],
+            "Modifiers" : []
+        },
+        {
+            "Action" : "/ShooterCore/Input/Actions/IA_QuickSlot_CycleForward",
+            "Key" : {
+                "KeyName" : "MouseScrollUp"
+            },
+            "bIsPlayerMappable" : true,
+            "PlayerMappableOptions" : {
+                "Name" : "QuickslotCycleForward",
+                "DisplayName" : "Quickslot Cycle Forward",
+                "DisplayCategory" : ""
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [],
+            "Modifiers" : []
+        },
+        {
+            "Action" : "/ShooterCore/Input/Actions/IA_ShowScoreboard",
+            "Key" : {
+                "KeyName" : "None"
+            },
+            "bIsPlayerMappable" : true,
+            "PlayerMappableOptions" : {
+                "Name" : "ShowScoreboard_Secondary",
+                "DisplayName" : "Show Scoreboard",
+                "DisplayCategory" : ""
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [],
+            "Modifiers" : []
+        },
+        {
+            "Action" : "/ShooterCore/Input/Actions/IA_QuickSlot1",
+            "Key" : {
+                "KeyName" : "None"
+            },
+            "bIsPlayerMappable" : true,
+            "PlayerMappableOptions" : {
+                "Name" : "QuickSlot_1_Secondary",
+                "DisplayName" : "Quick Slot 1",
+                "DisplayCategory" : ""
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [],
+            "Modifiers" : []
+        },
+        {
+            "Action" : "/ShooterCore/Input/Actions/IA_QuickSlot2",
+            "Key" : {
+                "KeyName" : "None"
+            },
+            "bIsPlayerMappable" : true,
+            "PlayerMappableOptions" : {
+                "Name" : "QuickSlot_2_Secondary",
+                "DisplayName" : "Quick Slot 2",
+                "DisplayCategory" : ""
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [],
+            "Modifiers" : []
+        },
+        {
+            "Action" : "/ShooterCore/Input/Actions/IA_QuickSlot3",
+            "Key" : {
+                "KeyName" : "None"
+            },
+            "bIsPlayerMappable" : true,
+            "PlayerMappableOptions" : {
+                "Name" : "QuickSlot_3_Secondary",
+                "DisplayName" : "Quick Slot 3",
+                "DisplayCategory" : ""
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [],
+            "Modifiers" : []
+        },
+        {
+            "Action" : "/ShooterCore/Input/Actions/IA_ADS",
+            "Key" : {
+                "KeyName" : "None"
+            },
+            "bIsPlayerMappable" : true,
+            "PlayerMappableOptions" : {
+                "Name" : "IA_ADS_Secondary",
+                "DisplayName" : "Aim Down Sight",
+                "DisplayCategory" : ""
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [],
+            "Modifiers" : []
+        },
+        {
+            "Action" : "/ShooterCore/Input/Actions/IA_Grenade",
+            "Key" : {
+                "KeyName" : "None"
+            },
+            "bIsPlayerMappable" : true,
+            "PlayerMappableOptions" : {
+                "Name" : "Grenade_Keyboard_Secondary",
+                "DisplayName" : "Throw Grenade",
+                "DisplayCategory" : ""
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [],
+            "Modifiers" : []
+        },
+        {
+            "Action" : "/ShooterCore/Input/Actions/IA_QuickSlot_CycleBackward",
+            "Key" : {
+                "KeyName" : "None"
+            },
+            "bIsPlayerMappable" : true,
+            "PlayerMappableOptions" : {
+                "Name" : "QuickslotCycleBackward_Secondary",
+                "DisplayName" : "Quickslot Cycle Backward",
+                "DisplayCategory" : ""
+            },
+            "bShouldBeIgnored" : false,
+            "Triggers" : [],
+            "Modifiers" : []
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+// /ShooterCore/Input/Configs/PMI_ShooterDefaultConfig_KBM
+{
+    "$type" : "PlayerMappableInputConfig",
+    "ConfigName" : "ShooterCoreDefault_KBM",
+    "ConfigDisplayName" : "Shooter Keyboard & Mouse",
+    "bIsDeprecated" : false,
+    "Metadata" : null,
+    "Contexts" : [
+        {
+            "$key" : "/ShooterCore/Input/Mappings/IMC_ShooterGame_KBM",
+            "$value" : 0
+        }
+    ]
+}

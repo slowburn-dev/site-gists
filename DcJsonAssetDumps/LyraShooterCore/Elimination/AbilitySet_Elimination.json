@@ -1,0 +1,18 @@
+// /ShooterCore/Elimination/AbilitySet_Elimination
+{
+    "$type" : "LyraAbilitySet",
+    "GrantedGameplayAbilities" : [
+        {
+            "Ability" : "/ShooterCore/Elimination/GA_ShowLeaderboard_TDM",
+            "AbilityLevel" : 1,
+            "InputTag" : "InputTag.Ability.ShowLeaderboard"
+        },
+        {
+            "Ability" : "/ShooterCore/Game/Respawn/GA_AutoRespawn",
+            "AbilityLevel" : 1,
+            "InputTag" : null
+        }
+    ],
+    "GrantedGameplayEffects" : [],
+    "GrantedAttributes" : []
+}

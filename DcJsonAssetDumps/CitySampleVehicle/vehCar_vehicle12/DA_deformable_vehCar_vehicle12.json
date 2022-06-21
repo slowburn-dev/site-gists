@@ -1,0 +1,958 @@
+// /Game/Vehicle/vehCar_vehicle12/DA_deformable_vehCar_vehicle12
+{
+    "$type" : "/Game/Vehicle/Blueprint/Deformable/DeformableVehicleDataAsset",
+    "On Physics Body Hit" : {
+        "frame_front_body_l" : {
+            "Use Distance" : true,
+            "Trigger Distance" : 10,
+            "Use Rotation" : false,
+            "Trigger Rotation" : {
+                "Pitch" : 90,
+                "Yaw" : 90,
+                "Roll" : 90
+            },
+            "Repeatable" : true,
+            "BreakGlassBoneNames" : {
+                "headlight_l_trans" : {
+                    "Trigger Chance" : 1,
+                    "Trigger Distance" : 10,
+                    "Trigger Rotation" : {
+                        "Pitch" : 90,
+                        "Yaw" : 90,
+                        "Roll" : 90
+                    }
+                }
+            },
+            "SpawnStaticMeshAtBone" : {
+                "headlight_l" : {
+                    "Trigger Chance" : 0.6,
+                    "Trigger Distance" : 20,
+                    "Trigger Rotation" : {
+                        "Pitch" : 90,
+                        "Yaw" : 90,
+                        "Roll" : 90
+                    },
+                    "DoOnce" : true,
+                    "SpawnStaticMesh" : "/Game/Vehicle/vehCar_vehicle13/Mesh/SM_Headlight_L_vehCar_vehicle13",
+                    "Geometry Collection Actor" : null
+                },
+                "turn_signal_l" : {
+                    "Trigger Chance" : 0.6,
+                    "Trigger Distance" : 20,
+                    "Trigger Rotation" : {
+                        "Pitch" : 20,
+                        "Yaw" : 20,
+                        "Roll" : 20
+                    },
+                    "DoOnce" : true,
+                    "SpawnStaticMesh" : "/Game/Vehicle/vehCar_vehicle13/Mesh/SM_Turn_Signal_L_vehCar_vehicle13",
+                    "Geometry Collection Actor" : null
+                },
+                "grill" : {
+                    "Trigger Chance" : 1,
+                    "Trigger Distance" : 10,
+                    "Trigger Rotation" : {
+                        "Pitch" : 90,
+                        "Yaw" : 90,
+                        "Roll" : 90
+                    },
+                    "DoOnce" : true,
+                    "SpawnStaticMesh" : null,
+                    "Geometry Collection Actor" : null
+                }
+            },
+            "EnablePhysicsBodies" : {
+                "hood_body" : {
+                    "Trigger Chance" : 0.1,
+                    "Trigger Distance" : 10,
+                    "Trigger Rotation" : {
+                        "Pitch" : 90,
+                        "Yaw" : 90,
+                        "Roll" : 90
+                    },
+                    "DoOnce" : true
+                }
+            },
+            "Break Constraints" : {
+                "Trigger Chance" : 1,
+                "Trigger Distance" : 2,
+                "Child Parent Body Names" : {
+                    "bumper_front_02_l" : "frame_front_body_l",
+                    "bumper_front_01_l" : "frame_front_body_l",
+                    "bumper_front" : "frame_front_body"
+                },
+                "Activate Child Parent Body Names" : {
+                    "bumper_front_02_r" : "frame_front_body_r",
+                    "bumper_front_01_r" : "frame_front_body_r"
+                }
+            }
+        },
+        "frame_front_body_r" : {
+            "Use Distance" : true,
+            "Trigger Distance" : 10,
+            "Use Rotation" : false,
+            "Trigger Rotation" : {
+                "Pitch" : 90,
+                "Yaw" : 90,
+                "Roll" : 90
+            },
+            "Repeatable" : true,
+            "BreakGlassBoneNames" : {
+                "headlight_r_trans" : {
+                    "Trigger Chance" : 1,
+                    "Trigger Distance" : 10,
+                    "Trigger Rotation" : {
+                        "Pitch" : 90,
+                        "Yaw" : 90,
+                        "Roll" : 90
+                    }
+                }
+            },
+            "SpawnStaticMeshAtBone" : {
+                "headlight_r" : {
+                    "Trigger Chance" : 0.6,
+                    "Trigger Distance" : 20,
+                    "Trigger Rotation" : {
+                        "Pitch" : 90,
+                        "Yaw" : 90,
+                        "Roll" : 90
+                    },
+                    "DoOnce" : true,
+                    "SpawnStaticMesh" : "/Game/Vehicle/vehCar_vehicle13/Mesh/SM_Headlight_R_vehCar_vehicle13",
+                    "Geometry Collection Actor" : null
+                },
+                "turn_signal_r" : {
+                    "Trigger Chance" : 0.6,
+                    "Trigger Distance" : 20,
+                    "Trigger Rotation" : {
+                        "Pitch" : 90,
+                        "Yaw" : 90,
+                        "Roll" : 90
+                    },
+                    "DoOnce" : true,
+                    "SpawnStaticMesh" : "/Game/Vehicle/vehCar_vehicle13/Mesh/SM_Turn_Signal_R_vehCar_vehicle13",
+                    "Geometry Collection Actor" : null
+                },
+                "grill" : {
+                    "Trigger Chance" : 1,
+                    "Trigger Distance" : 10,
+                    "Trigger Rotation" : {
+                        "Pitch" : 90,
+                        "Yaw" : 90,
+                        "Roll" : 90
+                    },
+                    "DoOnce" : true,
+                    "SpawnStaticMesh" : null,
+                    "Geometry Collection Actor" : null
+                }
+            },
+            "EnablePhysicsBodies" : {
+                "hood_body" : {
+                    "Trigger Chance" : 0.1,
+                    "Trigger Distance" : 10,
+                    "Trigger Rotation" : {
+                        "Pitch" : 0,
+                        "Yaw" : 0,
+                        "Roll" : 0
+                    },
+                    "DoOnce" : true
+                }
+            },
+            "Break Constraints" : {
+                "Trigger Chance" : 1,
+                "Trigger Distance" : 12,
+                "Child Parent Body Names" : {
+                    "bumper_front_02_r" : "frame_front_body_r",
+                    "bumper_front_01_r" : "frame_front_body_r",
+                    "bumper_front" : "frame_front_body"
+                },
+                "Activate Child Parent Body Names" : {
+                    "bumper_front_02_l" : "frame_front_body_l",
+                    "bumper_front_01_l" : "frame_front_body_l"
+                }
+            }
+        },
+        "frame_front_body" : {
+            "Use Distance" : true,
+            "Trigger Distance" : 10,
+            "Use Rotation" : false,
+            "Trigger Rotation" : {
+                "Pitch" : 90,
+                "Yaw" : 90,
+                "Roll" : 90
+            },
+            "Repeatable" : true,
+            "BreakGlassBoneNames" : {},
+            "SpawnStaticMeshAtBone" : {
+                "grill" : {
+                    "Trigger Chance" : 1,
+                    "Trigger Distance" : 10,
+                    "Trigger Rotation" : {
+                        "Pitch" : 0,
+                        "Yaw" : 0,
+                        "Roll" : 0
+                    },
+                    "DoOnce" : true,
+                    "SpawnStaticMesh" : null,
+                    "Geometry Collection Actor" : null
+                }
+            },
+            "EnablePhysicsBodies" : {
+                "hood_body" : {
+                    "Trigger Chance" : 0.5,
+                    "Trigger Distance" : 5,
+                    "Trigger Rotation" : {
+                        "Pitch" : 90,
+                        "Yaw" : 90,
+                        "Roll" : 90
+                    },
+                    "DoOnce" : true
+                }
+            },
+            "Break Constraints" : {
+                "Trigger Chance" : 1,
+                "Trigger Distance" : 15,
+                "Child Parent Body Names" : {
+                    "bumper_front_02_r" : "frame_front_body_r",
+                    "bumper_front_01_r" : "frame_front_body_r",
+                    "bumper_front" : "frame_front_body"
+                },
+                "Activate Child Parent Body Names" : {
+                    "bumper_front_02_l" : "frame_front_body_l",
+                    "bumper_front_01_l" : "frame_front_body_l"
+                }
+            }
+        },
+        "roof" : {
+            "Use Distance" : true,
+            "Trigger Distance" : 3,
+            "Use Rotation" : false,
+            "Trigger Rotation" : {
+                "Pitch" : 3,
+                "Yaw" : 3,
+                "Roll" : 3
+            },
+            "Repeatable" : true,
+            "BreakGlassBoneNames" : {
+                "door_front_l_trans" : {
+                    "Trigger Chance" : 1,
+                    "Trigger Distance" : 0,
+                    "Trigger Rotation" : {
+                        "Pitch" : 0,
+                        "Yaw" : 0,
+                        "Roll" : 0
+                    }
+                },
+                "door_rear_l_trans" : {
+                    "Trigger Chance" : 1,
+                    "Trigger Distance" : 0,
+                    "Trigger Rotation" : {
+                        "Pitch" : 0,
+                        "Yaw" : 0,
+                        "Roll" : 0
+                    }
+                },
+                "door_rear_r_trans" : {
+                    "Trigger Chance" : 1,
+                    "Trigger Distance" : 0,
+                    "Trigger Rotation" : {
+                        "Pitch" : 0,
+                        "Yaw" : 0,
+                        "Roll" : 0
+                    }
+                },
+                "door_front_r_trans" : {
+                    "Trigger Chance" : 1,
+                    "Trigger Distance" : 0,
+                    "Trigger Rotation" : {
+                        "Pitch" : 0,
+                        "Yaw" : 0,
+                        "Roll" : 0
+                    }
+                },
+                "frame_rear_trans" : {
+                    "Trigger Chance" : 1,
+                    "Trigger Distance" : 0,
+                    "Trigger Rotation" : {
+                        "Pitch" : 0,
+                        "Yaw" : 0,
+                        "Roll" : 0
+                    }
+                }
+            },
+            "SpawnStaticMeshAtBone" : {},
+            "EnablePhysicsBodies" : {
+                "door_front_open_l" : {
+                    "Trigger Chance" : 0.15,
+                    "Trigger Distance" : 3,
+                    "Trigger Rotation" : {
+                        "Pitch" : 0,
+                        "Yaw" : 0,
+                        "Roll" : 0
+                    },
+                    "DoOnce" : true
+                },
+                "door_front_open_r" : {
+                    "Trigger Chance" : 0.15,
+                    "Trigger Distance" : 3,
+                    "Trigger Rotation" : {
+                        "Pitch" : 0,
+                        "Yaw" : 0,
+                        "Roll" : 0
+                    },
+                    "DoOnce" : true
+                },
+                "door_rear_open_l" : {
+                    "Trigger Chance" : 0.15,
+                    "Trigger Distance" : 3,
+                    "Trigger Rotation" : {
+                        "Pitch" : 0,
+                        "Yaw" : 0,
+                        "Roll" : 0
+                    },
+                    "DoOnce" : true
+                },
+                "door_rear_open_r" : {
+                    "Trigger Chance" : 0.15,
+                    "Trigger Distance" : 3,
+                    "Trigger Rotation" : {
+                        "Pitch" : 0,
+                        "Yaw" : 0,
+                        "Roll" : 0
+                    },
+                    "DoOnce" : true
+                },
+                "trunk_body" : {
+                    "Trigger Chance" : 0.1,
+                    "Trigger Distance" : 5,
+                    "Trigger Rotation" : {
+                        "Pitch" : 0,
+                        "Yaw" : 0,
+                        "Roll" : 0
+                    },
+                    "DoOnce" : true
+                },
+                "hood_body" : {
+                    "Trigger Chance" : 0.1,
+                    "Trigger Distance" : 5,
+                    "Trigger Rotation" : {
+                        "Pitch" : 0,
+                        "Yaw" : 0,
+                        "Roll" : 0
+                    },
+                    "DoOnce" : true
+                }
+            },
+            "Break Constraints" : {
+                "Trigger Chance" : 1,
+                "Trigger Distance" : 1,
+                "Child Parent Body Names" : {},
+                "Activate Child Parent Body Names" : {}
+            }
+        },
+        "door_front_l" : {
+            "Use Distance" : true,
+            "Trigger Distance" : 5,
+            "Use Rotation" : false,
+            "Trigger Rotation" : {
+                "Pitch" : 90,
+                "Yaw" : 90,
+                "Roll" : 90
+            },
+            "Repeatable" : true,
+            "BreakGlassBoneNames" : {
+                "door_front_l_trans" : {
+                    "Trigger Chance" : 1,
+                    "Trigger Distance" : 0,
+                    "Trigger Rotation" : {
+                        "Pitch" : 0,
+                        "Yaw" : 0,
+                        "Roll" : 0
+                    }
+                }
+            },
+            "SpawnStaticMeshAtBone" : {},
+            "EnablePhysicsBodies" : {
+                "side_view_mirror_body_l" : {
+                    "Trigger Chance" : 1,
+                    "Trigger Distance" : 5,
+                    "Trigger Rotation" : {
+                        "Pitch" : 0,
+                        "Yaw" : 0,
+                        "Roll" : 0
+                    },
+                    "DoOnce" : true
+                }
+            },
+            "Break Constraints" : {
+                "Trigger Chance" : 1,
+                "Trigger Distance" : 1,
+                "Child Parent Body Names" : {},
+                "Activate Child Parent Body Names" : {}
+            }
+        },
+        "door_front_r" : {
+            "Use Distance" : true,
+            "Trigger Distance" : 5,
+            "Use Rotation" : false,
+            "Trigger Rotation" : {
+                "Pitch" : 90,
+                "Yaw" : 90,
+                "Roll" : 90
+            },
+            "Repeatable" : true,
+            "BreakGlassBoneNames" : {
+                "door_front_r_trans" : {
+                    "Trigger Chance" : 1,
+                    "Trigger Distance" : 0,
+                    "Trigger Rotation" : {
+                        "Pitch" : 0,
+                        "Yaw" : 0,
+                        "Roll" : 0
+                    }
+                }
+            },
+            "SpawnStaticMeshAtBone" : {},
+            "EnablePhysicsBodies" : {
+                "side_view_mirror_body_r" : {
+                    "Trigger Chance" : 1,
+                    "Trigger Distance" : 5,
+                    "Trigger Rotation" : {
+                        "Pitch" : 0,
+                        "Yaw" : 0,
+                        "Roll" : 0
+                    },
+                    "DoOnce" : true
+                }
+            },
+            "Break Constraints" : {
+                "Trigger Chance" : 1,
+                "Trigger Distance" : 1,
+                "Child Parent Body Names" : {},
+                "Activate Child Parent Body Names" : {}
+            }
+        },
+        "door_rear_l" : {
+            "Use Distance" : true,
+            "Trigger Distance" : 5,
+            "Use Rotation" : false,
+            "Trigger Rotation" : {
+                "Pitch" : 90,
+                "Yaw" : 90,
+                "Roll" : 90
+            },
+            "Repeatable" : true,
+            "BreakGlassBoneNames" : {
+                "door_rear_l_trans" : {
+                    "Trigger Chance" : 1,
+                    "Trigger Distance" : 0,
+                    "Trigger Rotation" : {
+                        "Pitch" : 0,
+                        "Yaw" : 0,
+                        "Roll" : 0
+                    }
+                },
+                "frame_rear_trans" : {
+                    "Trigger Chance" : 1,
+                    "Trigger Distance" : 20,
+                    "Trigger Rotation" : {
+                        "Pitch" : 90,
+                        "Yaw" : 90,
+                        "Roll" : 90
+                    }
+                }
+            },
+            "SpawnStaticMeshAtBone" : {},
+            "EnablePhysicsBodies" : {},
+            "Break Constraints" : {
+                "Trigger Chance" : 1,
+                "Trigger Distance" : 1,
+                "Child Parent Body Names" : {},
+                "Activate Child Parent Body Names" : {}
+            }
+        },
+        "door_rear_r" : {
+            "Use Distance" : true,
+            "Trigger Distance" : 5,
+            "Use Rotation" : false,
+            "Trigger Rotation" : {
+                "Pitch" : 90,
+                "Yaw" : 90,
+                "Roll" : 90
+            },
+            "Repeatable" : true,
+            "BreakGlassBoneNames" : {
+                "door_rear_r_trans" : {
+                    "Trigger Chance" : 1,
+                    "Trigger Distance" : 0,
+                    "Trigger Rotation" : {
+                        "Pitch" : 90,
+                        "Yaw" : 90,
+                        "Roll" : 90
+                    }
+                },
+                "frame_rear_trans" : {
+                    "Trigger Chance" : 1,
+                    "Trigger Distance" : 20,
+                    "Trigger Rotation" : {
+                        "Pitch" : 90,
+                        "Yaw" : 90,
+                        "Roll" : 90
+                    }
+                }
+            },
+            "SpawnStaticMeshAtBone" : {},
+            "EnablePhysicsBodies" : {},
+            "Break Constraints" : {
+                "Trigger Chance" : 1,
+                "Trigger Distance" : 1,
+                "Child Parent Body Names" : {},
+                "Activate Child Parent Body Names" : {}
+            }
+        },
+        "frame_rear_body" : {
+            "Use Distance" : true,
+            "Trigger Distance" : 10,
+            "Use Rotation" : false,
+            "Trigger Rotation" : {
+                "Pitch" : 5,
+                "Yaw" : 5,
+                "Roll" : 5
+            },
+            "Repeatable" : true,
+            "BreakGlassBoneNames" : {
+                "frame_rear_trans" : {
+                    "Trigger Chance" : 1,
+                    "Trigger Distance" : 30,
+                    "Trigger Rotation" : {
+                        "Pitch" : 10,
+                        "Yaw" : 10,
+                        "Roll" : 10
+                    }
+                },
+                "taillight_l_trans" : {
+                    "Trigger Chance" : 1,
+                    "Trigger Distance" : 0,
+                    "Trigger Rotation" : {
+                        "Pitch" : 0,
+                        "Yaw" : 0,
+                        "Roll" : 0
+                    }
+                }
+            },
+            "SpawnStaticMeshAtBone" : {
+                "taillight_l" : {
+                    "Trigger Chance" : 1,
+                    "Trigger Distance" : 20,
+                    "Trigger Rotation" : {
+                        "Pitch" : 90,
+                        "Yaw" : 90,
+                        "Roll" : 90
+                    },
+                    "DoOnce" : true,
+                    "SpawnStaticMesh" : "/Game/Vehicle/vehCar_vehicle13/Mesh/SM_Taillight_L_vehCar_vehicle13",
+                    "Geometry Collection Actor" : null
+                }
+            },
+            "EnablePhysicsBodies" : {
+                "trunk_body" : {
+                    "Trigger Chance" : 1,
+                    "Trigger Distance" : 20,
+                    "Trigger Rotation" : {
+                        "Pitch" : 5,
+                        "Yaw" : 5,
+                        "Roll" : 5
+                    },
+                    "DoOnce" : true
+                }
+            },
+            "Break Constraints" : {
+                "Trigger Chance" : 1,
+                "Trigger Distance" : 0,
+                "Child Parent Body Names" : {
+                    "bumper_rear_02_l" : "frame_rear_body",
+                    "bumper_rear_01_l" : "frame_rear_body",
+                    "bumper_rear" : "frame_rear_body"
+                },
+                "Activate Child Parent Body Names" : {
+                    "bumper_rear_01_r" : "frame_rear_body_r",
+                    "bumper_rear_02_r" : "frame_rear_body_r"
+                }
+            }
+        },
+        "frame_rear_l" : {
+            "Use Distance" : true,
+            "Trigger Distance" : 10,
+            "Use Rotation" : false,
+            "Trigger Rotation" : {
+                "Pitch" : 90,
+                "Yaw" : 90,
+                "Roll" : 90
+            },
+            "Repeatable" : true,
+            "BreakGlassBoneNames" : {
+                "taillight_l_trans" : {
+                    "Trigger Chance" : 1,
+                    "Trigger Distance" : 0,
+                    "Trigger Rotation" : {
+                        "Pitch" : 90,
+                        "Yaw" : 90,
+                        "Roll" : 90
+                    }
+                }
+            },
+            "SpawnStaticMeshAtBone" : {
+                "taillight_l" : {
+                    "Trigger Chance" : 1,
+                    "Trigger Distance" : 20,
+                    "Trigger Rotation" : {
+                        "Pitch" : 90,
+                        "Yaw" : 90,
+                        "Roll" : 90
+                    },
+                    "DoOnce" : true,
+                    "SpawnStaticMesh" : "/Game/Vehicle/vehCar_vehicle13/Mesh/SM_Taillight_L_vehCar_vehicle13",
+                    "Geometry Collection Actor" : null
+                }
+            },
+            "EnablePhysicsBodies" : {},
+            "Break Constraints" : {
+                "Trigger Chance" : 1,
+                "Trigger Distance" : 1,
+                "Child Parent Body Names" : {},
+                "Activate Child Parent Body Names" : {}
+            }
+        },
+        "frame_rear_r" : {
+            "Use Distance" : true,
+            "Trigger Distance" : 10,
+            "Use Rotation" : false,
+            "Trigger Rotation" : {
+                "Pitch" : 90,
+                "Yaw" : 90,
+                "Roll" : 90
+            },
+            "Repeatable" : true,
+            "BreakGlassBoneNames" : {
+                "taillight_r_trans" : {
+                    "Trigger Chance" : 1,
+                    "Trigger Distance" : 0,
+                    "Trigger Rotation" : {
+                        "Pitch" : 90,
+                        "Yaw" : 90,
+                        "Roll" : 90
+                    }
+                }
+            },
+            "SpawnStaticMeshAtBone" : {
+                "taillight_r" : {
+                    "Trigger Chance" : 1,
+                    "Trigger Distance" : 20,
+                    "Trigger Rotation" : {
+                        "Pitch" : 90,
+                        "Yaw" : 90,
+                        "Roll" : 90
+                    },
+                    "DoOnce" : true,
+                    "SpawnStaticMesh" : "/Game/Vehicle/vehCar_vehicle13/Mesh/SM_Taillight_R_vehCar_vehicle13",
+                    "Geometry Collection Actor" : null
+                }
+            },
+            "EnablePhysicsBodies" : {},
+            "Break Constraints" : {
+                "Trigger Chance" : 1,
+                "Trigger Distance" : 1,
+                "Child Parent Body Names" : {},
+                "Activate Child Parent Body Names" : {}
+            }
+        },
+        "frame_rear_body_r" : {
+            "Use Distance" : true,
+            "Trigger Distance" : 10,
+            "Use Rotation" : false,
+            "Trigger Rotation" : {
+                "Pitch" : 5,
+                "Yaw" : 5,
+                "Roll" : 5
+            },
+            "Repeatable" : true,
+            "BreakGlassBoneNames" : {
+                "frame_rear_trans" : {
+                    "Trigger Chance" : 1,
+                    "Trigger Distance" : 30,
+                    "Trigger Rotation" : {
+                        "Pitch" : 10,
+                        "Yaw" : 10,
+                        "Roll" : 10
+                    }
+                },
+                "taillight_r_trans" : {
+                    "Trigger Chance" : 1,
+                    "Trigger Distance" : 0,
+                    "Trigger Rotation" : {
+                        "Pitch" : 0,
+                        "Yaw" : 0,
+                        "Roll" : 0
+                    }
+                }
+            },
+            "SpawnStaticMeshAtBone" : {
+                "taillight_r" : {
+                    "Trigger Chance" : 1,
+                    "Trigger Distance" : 20,
+                    "Trigger Rotation" : {
+                        "Pitch" : 90,
+                        "Yaw" : 90,
+                        "Roll" : 90
+                    },
+                    "DoOnce" : true,
+                    "SpawnStaticMesh" : "/Game/Vehicle/vehCar_vehicle13/Mesh/SM_Taillight_R_vehCar_vehicle13",
+                    "Geometry Collection Actor" : null
+                }
+            },
+            "EnablePhysicsBodies" : {
+                "trunk_body" : {
+                    "Trigger Chance" : 1,
+                    "Trigger Distance" : 20,
+                    "Trigger Rotation" : {
+                        "Pitch" : 5,
+                        "Yaw" : 5,
+                        "Roll" : 5
+                    },
+                    "DoOnce" : true
+                }
+            },
+            "Break Constraints" : {
+                "Trigger Chance" : 1,
+                "Trigger Distance" : 0,
+                "Child Parent Body Names" : {
+                    "bumper_rear_02_r" : "frame_rear_body_r",
+                    "bumper_rear_01_r" : "frame_rear_body_r",
+                    "bumper_rear" : "frame_rear_body"
+                },
+                "Activate Child Parent Body Names" : {
+                    "bumper_rear_01_l" : "frame_rear_body",
+                    "bumper_rear_02_l" : "frame_rear_body"
+                }
+            }
+        },
+        "panel_front_l" : {
+            "Use Distance" : false,
+            "Trigger Distance" : 5,
+            "Use Rotation" : false,
+            "Trigger Rotation" : {
+                "Pitch" : 0,
+                "Yaw" : 0,
+                "Roll" : 0
+            },
+            "Repeatable" : true,
+            "BreakGlassBoneNames" : {},
+            "SpawnStaticMeshAtBone" : {},
+            "EnablePhysicsBodies" : {},
+            "Break Constraints" : {
+                "Trigger Chance" : 1,
+                "Trigger Distance" : 1,
+                "Child Parent Body Names" : {},
+                "Activate Child Parent Body Names" : {}
+            }
+        },
+        "panel_front_r" : {
+            "Use Distance" : false,
+            "Trigger Distance" : 5,
+            "Use Rotation" : false,
+            "Trigger Rotation" : {
+                "Pitch" : 0,
+                "Yaw" : 0,
+                "Roll" : 0
+            },
+            "Repeatable" : true,
+            "BreakGlassBoneNames" : {},
+            "SpawnStaticMeshAtBone" : {},
+            "EnablePhysicsBodies" : {},
+            "Break Constraints" : {
+                "Trigger Chance" : 1,
+                "Trigger Distance" : 1,
+                "Child Parent Body Names" : {},
+                "Activate Child Parent Body Names" : {}
+            }
+        }
+    },
+    "Peripheral Physics Bodies" : [
+        "door_front_open_l",
+        "door_front_open_r",
+        "door_rear_open_l",
+        "door_rear_open_r",
+        "trunk_body",
+        "hood_body",
+        "side_view_mirror_body_l",
+        "side_view_mirror_body_r",
+        "hood_body"
+    ],
+    "Control Rig Element Mapping" : {
+        "frame_front_body" : {
+            "Element Type" : "Control",
+            "Control Rig Element" : "frame_front_body_ctrl"
+        },
+        "frame_front_body_l" : {
+            "Element Type" : "Control",
+            "Control Rig Element" : "frame_front_body_l_ctrl"
+        },
+        "frame_front_body_r" : {
+            "Element Type" : "Control",
+            "Control Rig Element" : "frame_front_body_r_ctrl"
+        },
+        "door_front_l" : {
+            "Element Type" : "Control",
+            "Control Rig Element" : "door_front_l_ctrl"
+        },
+        "door_front_r" : {
+            "Element Type" : "Control",
+            "Control Rig Element" : "door_front_r_ctrl"
+        },
+        "door_rear_l" : {
+            "Element Type" : "Control",
+            "Control Rig Element" : "door_rear_l_ctrl"
+        },
+        "door_rear_r" : {
+            "Element Type" : "Control",
+            "Control Rig Element" : "door_rear_r_ctrl"
+        },
+        "frame_rear_l" : {
+            "Element Type" : "Control",
+            "Control Rig Element" : "frame_rear_l_ctrl"
+        },
+        "frame_rear_r" : {
+            "Element Type" : "Control",
+            "Control Rig Element" : "frame_rear_r_ctrl"
+        },
+        "panel_front_l" : {
+            "Element Type" : "Control",
+            "Control Rig Element" : "panel_front_l_ctrl"
+        },
+        "panel_front_r" : {
+            "Element Type" : "Control",
+            "Control Rig Element" : "panel_front_r_ctrl"
+        },
+        "roof" : {
+            "Element Type" : "Control",
+            "Control Rig Element" : "roof_ctrl"
+        },
+        "frame_rear_body" : {
+            "Element Type" : "Control",
+            "Control Rig Element" : "frame_rear_body_ctrl"
+        },
+        "frame_rear_body_r" : {
+            "Element Type" : "Control",
+            "Control Rig Element" : "frame_rear_body_r_ctrl"
+        }
+    },
+    "On Constraint Broken" : {
+        "bumper_front_02_r" : {
+            "Break Glass Bone Names" : [],
+            "Parent Key" : "bumper_front",
+            "Spawn Geometry Collection Actor" : {}
+        },
+        "bumper_front_01_r" : {
+            "Break Glass Bone Names" : [],
+            "Parent Key" : "bumper_front",
+            "Spawn Geometry Collection Actor" : {}
+        },
+        "bumper_front" : {
+            "Break Glass Bone Names" : [],
+            "Parent Key" : "bumper_front",
+            "Spawn Geometry Collection Actor" : {}
+        },
+        "bumper_front_01_l" : {
+            "Break Glass Bone Names" : [],
+            "Parent Key" : "bumper_front",
+            "Spawn Geometry Collection Actor" : {}
+        },
+        "bumper_front_02_l" : {
+            "Break Glass Bone Names" : [],
+            "Parent Key" : "bumper_front",
+            "Spawn Geometry Collection Actor" : {}
+        },
+        "bumper_rear_02_r" : {
+            "Break Glass Bone Names" : [],
+            "Parent Key" : "bumper_rear",
+            "Spawn Geometry Collection Actor" : {}
+        },
+        "bumper_rear_01_r" : {
+            "Break Glass Bone Names" : [],
+            "Parent Key" : "bumper_rear",
+            "Spawn Geometry Collection Actor" : {}
+        },
+        "bumper_rear" : {
+            "Break Glass Bone Names" : [],
+            "Parent Key" : "bumper_rear",
+            "Spawn Geometry Collection Actor" : {}
+        },
+        "bumper_rear_01_l" : {
+            "Break Glass Bone Names" : [],
+            "Parent Key" : "bumper_rear",
+            "Spawn Geometry Collection Actor" : {}
+        },
+        "bumper_rear_02_l" : {
+            "Break Glass Bone Names" : [],
+            "Parent Key" : "bumper_rear",
+            "Spawn Geometry Collection Actor" : {}
+        }
+    },
+    "On Constraint Broken Spawn" : {
+        "bumper_front" : {
+            "Spawn Skeletal Mesh" : null,
+            "Number Of Constraints" : 5
+        },
+        "bumper_rear" : {
+            "Spawn Skeletal Mesh" : null,
+            "Number Of Constraints" : 5
+        }
+    },
+    "On Plastic Deformation" : {
+        "frame_front_body_r" : {
+            "Disable Vehicle" : {
+                "Use Distance" : true,
+                "Trigger Distance" : 50,
+                "Use Rotation" : false,
+                "Trigger Rotation" : {
+                    "Pitch" : 0,
+                    "Yaw" : 0,
+                    "Roll" : 0
+                }
+            }
+        },
+        "frame_front_body" : {
+            "Disable Vehicle" : {
+                "Use Distance" : true,
+                "Trigger Distance" : 40,
+                "Use Rotation" : false,
+                "Trigger Rotation" : {
+                    "Pitch" : 0,
+                    "Yaw" : 0,
+                    "Roll" : 0
+                }
+            }
+        },
+        "frame_front_body_l" : {
+            "Disable Vehicle" : {
+                "Use Distance" : true,
+                "Trigger Distance" : 50,
+                "Use Rotation" : false,
+                "Trigger Rotation" : {
+                    "Pitch" : 0,
+                    "Yaw" : 0,
+                    "Roll" : 0
+                }
+            }
+        }
+    },
+    "Control Rig Options" : {
+        "Body Style" : "Sedan",
+        "Front Panel Rotation Offset" : 20,
+        "Front Panel Rotation Random Offset" : {
+            "X" : 5,
+            "Y" : -35,
+            "Z" : 5
+        }
+    }
+}

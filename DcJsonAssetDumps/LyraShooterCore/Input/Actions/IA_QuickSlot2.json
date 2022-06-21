@@ -1,0 +1,16 @@
+// /ShooterCore/Input/Actions/IA_QuickSlot2
+{
+    "$type" : "InputAction",
+    "bConsumeInput" : true,
+    "bTriggerWhenPaused" : false,
+    "bReserveAllMappings" : false,
+    "ValueType" : "Boolean",
+    "Triggers" : [
+        {
+            "$type" : "InputTriggerPressed",
+            "ActuationThreshold" : 0.5,
+            "LastValue" : {}
+        }
+    ],
+    "Modifiers" : []
+}
